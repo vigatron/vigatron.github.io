@@ -8,18 +8,6 @@
 | Structure      | - 256 tiles <br>- Tile size: 8x8 pixels<br>- Pixel format: HRGB2222 (8-bit) |
 | Tile width     | 8 pixels = 8 bytes              |
 
-### Pixel Format
-
-Формат пикселя: **HRGB2222 (8 бит)**
-
-Битовая структура (MSB → LSB):
-
-bit 7-6 : H  (2 бита, назначение определяется аппаратной реализацией)
-bit 5-4 : R  (2 бита, красный)
-bit 3-2 : G  (2 бита, зелёный)
-bit 1-0 : B  (2 бита, синий)
-
-Порядок пикселей в строке тайла: слева направо (от младшего адреса к старшему).
 
 ## Описание
 
@@ -41,21 +29,6 @@ bit 1-0 : B  (2 бита, синий)
 
     - row = 0..7
     - tile_index = 0..255
-
-
-### Memory Layout
-
-
-Row 0: [tile0][tile1][tile2] ... [tile255]
-Row 1: [tile0][tile1][tile2] ... [tile255]
-
-Примеры:
-
-    Tile #0,  row 0: offset = 0 * 0x400 +  0 * 8
-    Tile #2,  row 2: offset = 2 * 0x400 +  2 * 8
-    Tile #5,  row 3: offset = 3 * 0x400 +  5 * 8
-    Tile #42, row 7: offset = 7 * 0x400 + 42 * 8
-    ...
 
 
 
@@ -82,6 +55,36 @@ Row 1: [tile0][tile1][tile2] ... [tile255]
 
   </tr>
 </table>
+
+### Pixel Format
+
+Формат пикселя: **HRGB2222 (8 бит)**
+
+Битовая структура (MSB → LSB):
+
+bit 7-6 : H  (2 бита, назначение определяется аппаратной реализацией)
+bit 5-4 : R  (2 бита, красный)
+bit 3-2 : G  (2 бита, зелёный)
+bit 1-0 : B  (2 бита, синий)
+
+Порядок пикселей в строке тайла: слева направо (от младшего адреса к старшему).
+
+
+### Memory Layout
+
+
+Row 0: [tile0][tile1][tile2] ... [tile255]
+Row 1: [tile0][tile1][tile2] ... [tile255]
+
+Примеры:
+
+    Tile #0,  row 0: offset = 0 * 0x400 +  0 * 8
+    Tile #2,  row 2: offset = 2 * 0x400 +  2 * 8
+    Tile #5,  row 3: offset = 3 * 0x400 +  5 * 8
+    Tile #42, row 7: offset = 7 * 0x400 + 42 * 8
+    ...
+
+
 
 ## Особенности конфигурации SDRAM
 
@@ -127,6 +130,8 @@ CMBoards — custom hardware platform based on STM32 MCU + Xilinx FPGA + externa
 * CMBoards HDM32H750HDMI : STM32F750 + XC6SLX9  + 1x DDR   x32 + HDMI_OUT
 * CMBoards HDM32F746TFT7 : STM32F746 + XC6SLX16 + 2x SDRAM x32 + TFT7_800_480
 * CMBoards HDM32H750TFT7 : STM32H750 + XC6SLX16 + 1x DDR   x32 + TFT7_800_480
+
+[BRD32F407HDMIR3 Board Details](https://github.com/vigatron/docs/tree/main/projects/cmboards/brd32f407hdmir3)
 
 ### Ограничения
 
