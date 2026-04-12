@@ -7,8 +7,9 @@
 | File size      | 16384 bytes (16 KB)             |
 | Structure      | - 256 tiles <br>- Tile size: 8x8 pixels<br>- Pixel format: HRGB2222 (8-bit) |
 | Tile size      | 8x8 pixels                      |
-| Bytes/row      | 8 bytes                         |
+| Bytes/Tile row | 8 bytes                         |
 
+---
 
 ## Описание
 
@@ -23,18 +24,22 @@
 
 
 Особенностью данного формата является построчная организация данных:
-каждая строка всех тайлов занимает 256 × 8 = 2048 байта (0x800)
+каждая строка (scanline) всех 256 тайлов содержит 256 × 8 пикселей = 2048 байт (0x800)
+
+---
 
 ## Видео - Демонстрация 
 
 [![Смотреть видео](https://img.youtube.com/vi/6Itho-f9JyU/0.jpg)](https://www.youtube.com/watch?v=6Itho-f9JyU)
 
+---
 
 ## Зачем нужен этот формат?
 - Оптимизирован для построчного доступа к SDRAM
 - Позволяет считывать строки всех 256 тайлов за одну burst-операцию
 - Идеально подходит для конвейеров рендеринга на базе FPGA
 
+---
 
 ## Примеры
 
@@ -54,6 +59,8 @@
   </tr>
 </table>
 
+---
+
 ### Pixel Format
 
 Формат пикселя: **HRGB2222 (8 бит)**
@@ -67,7 +74,40 @@ bit 1-0 : B  (2 бита, синий)
 
 Порядок пикселей в строке тайла: слева направо (от младшего адреса к старшему).
 
+Биты H (bit 7-6) используются как модификатор цвета.
+При преобразовании в RGB они формируют XOR-маску (COLXOR),
+которая применяется к значениям каналов R, G и B после их расширения до 4 бит
+и перед финальным расширением до 8 бит.
 
+
+---
+
+### Color Conversion
+
+Преобразование 8-бит uint8_t в 24-бит RGB 8:8:8 - CLR32RGB(V) 
+
+**vhcolors.hpp**
+
+```cpp
+#pragma once
+
+#include <stdint.h>
+
+#define COL2B(X, SHL)   ( ( (X) >> SHL ) & 3 )
+#define COLDBL(C2B)     ( ( (C2B) << 2 ) | (C2B) )
+#define COLQRT(C4B)     ( ( (C4B) << 4 ) | (C4B) )
+#define COLXOR(X)       ( ( ( (X) >> 5) & 4 ) | ( ( (X) >> 5) & 2) )
+#define COLF8(X,N)      COLQRT( ( COLDBL( COL2B(X,N) )  ^ COLXOR(X) ) )
+#define CLRR8(X)        COLF8((X), 4)
+#define CLRG8(X)        COLF8((X), 2)
+#define CLRB8(X)        COLF8((X), 0)
+#define CLRSH(X,N)      ((X)<<N)
+#define CLR32RGB(X)     (CLRSH(CLRR8(X),  0) | CLRSH(CLRG8(X), 8) | CLRSH(CLRB8(X), 16))
+#define CLR32BGR(X)     (CLRSH(CLRR8(X), 16) | CLRSH(CLRG8(X), 8) | CLRSH(CLRB8(X),  0))
+#define SWAPRB(X)       ( ( ( X & 0xFF ) << 16) | ( X & 0xFF00) | ( (X>>16) & 0xFF ) )
+```
+
+---
 ### Memory Layout
 
 
@@ -93,6 +133,7 @@ Row 1: [tile0][tile1][tile2] ... [tile255]
     - tile_index = 0..255
 
 
+---
 
 ## Особенности конфигурации SDRAM
 
@@ -130,6 +171,8 @@ Row 1: [tile0][tile1][tile2] ... [tile255]
   </tr>
 </table>
 
+
+---
 
 ### CMBoards configuration:
 
