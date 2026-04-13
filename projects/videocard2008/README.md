@@ -90,6 +90,8 @@
 
 Related Links :
 
+[DEMO7MODE VHDL CPLD1](https://github.com/vigatron/docs/tree/main/projects/videocard2008/demo7vhdl/videox1)
+[DEMO7MODE VHDL CPLD2](https://github.com/vigatron/docs/tree/main/projects/videocard2008/demo7vhdl/videox2)
 [Autonavi 2008 Board Details](https://github.com/vigatron/docs/tree/main/projects/autonavi2008)
 
 
