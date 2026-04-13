@@ -27,7 +27,7 @@
 * (A) Resolution: 640 x 480, 8-bit color
 * (B) Resolution: 320 x 240, 8-bit color
 * (C) Resolution: 400 x 240, 8-bit color
-* (D) Resolution: custom nnon-standard etc ...
+* (D) Resolution: custom non-standard etc ...
 
 
 
