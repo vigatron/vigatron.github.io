@@ -1,32 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
   <url>
-    <loc>https://vigatron.github.io/docs/projects/autonavi2008/</loc>
+    <loc>https://vigatron.github.io/projects/autonavi2008/</loc>
   </url>
-
   <url>
-    <loc>https://vigatron.github.io/docs/projects/autonavi2008tests/</loc>
+    <loc>https://vigatron.github.io/projects/autonavi2008tests/</loc>
   </url>
-
   <url>
-    <loc>https://vigatron.github.io/docs/projects/cmboards/brd32f407hdmir3/</loc>
+    <loc>https://vigatron.github.io/projects/cmboards/brd32f407hdmir3/</loc>
   </url>
-
   <url>
-    <loc>https://vigatron.github.io/docs/projects/led2006/</loc>
+    <loc>https://vigatron.github.io/projects/led2006/</loc>
   </url>
-
   <url>
-    <loc>https://vigatron.github.io/docs/projects/led2008/</loc>
+    <loc>https://vigatron.github.io/projects/led2008/</loc>
   </url>
-
   <url>
-    <loc>https://vigatron.github.io/docs/projects/videocard2008/</loc>
+    <loc>https://vigatron.github.io/projects/videocard2008/</loc>
   </url>
-
   <url>
-    <loc>https://vigatron.github.io/docs/formats/cells</loc>
+    <loc>https://vigatron.github.io/formats/cells</loc>
   </url>
-
 </urlset>
