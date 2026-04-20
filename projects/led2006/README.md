@@ -12,8 +12,10 @@
 
 <a href="25-11-06_1304.jpg"><img src="25-11-06_1304.jpg" /></a><br><em>панель 5х5</em>
 
-Разработка V01G04A81
-Изготовление плат VDMAIS
+Разработка V01G04A81 / EagleCAD  
+  
+Изготовление плат :
+ - VDMAIS
 
 Пайка светодиодов :
  - VDMAIS
@@ -41,8 +43,8 @@
 
 Links :
 
-- Следующее поколение : https://vigatron.github.io/projects/led2008 , github - [LED Panels 2008](https://github.com/vigatron/docs/tree/main/projects/led2008)
-- Блок управления : https://vigatron.github.io/projects/autonavi2008 , github - [Autonavi 2008 Board Details](https://github.com/vigatron/docs/tree/main/projects/autonavi2008)
+- Следующее поколение : [LED Panels 2008](https://vigatron.github.io/projects/led2008)  
+- Блок управления : [Autonavi 2008](https://vigatron.github.io/projects/autonavi2008)  
 
 
 ---
