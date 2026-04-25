@@ -2,6 +2,7 @@
 
 | Property          | Value                       |
 |-------------------|-----------------------------|
+| Started on        | Oct 2007                    |
 | Device Released   | Feb 2008                    |
 | Author            | Viktor Glebov (V01G04A81)   |
 | Series            | Small Series (x5) Prototype |

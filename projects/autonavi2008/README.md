@@ -2,6 +2,7 @@
 
 | Property          | Value                         |
 |-------------------|-------------------------------|
+| Started on        | May 2007                      |
 | Device Released   | Apr 2008                      |
 | Author            | Viktor Glebov (V01G04A81)     |
 | Series            | Small Series (x10) Prototype  |
@@ -10,8 +11,6 @@
 ---
 
 ### Main Device Board
-
-( Designed / May 2007 )
 
 
 Dual 32-bit ARM MCU Board with CPLD
