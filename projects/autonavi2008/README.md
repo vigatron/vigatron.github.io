@@ -30,7 +30,7 @@ Dual 32-bit ARM MCU Board with CPLD
 
 ---
 
-<center><a href="pics/device_photo.jpg"><img src="pics/device_photo.jpg" width="800px"/></a></center>
+<center><a href="pics/device_photo.jpg"><img src="pics/device_photo.jpg" /></a></center>
 
 <br>
 <br>
@@ -51,17 +51,17 @@ Dual 32-bit ARM MCU Board with CPLD
 
 <table>
   <tr>
-    <td align="center">
+    <td align="center" width="30%">
       <a href="pics/001_NAVI_PCB.JPG">
-        <img src="pics/001_NAVI_PCB.JPG" width="80%" />
+        <img src="pics/001_NAVI_PCB.JPG"/>
       </a><br><em>PCB Layout</em>
     </td>
-    <td align="center">
+    <td align="center" width="33%">
       <a href="pics/003_NAVI_PHT.jpg">
-        <img src="pics/003_NAVI_PHT.jpg" width="50%" />
+        <img src="pics/003_NAVI_PHT.jpg"/>
       </a><br><em>Main Board</em>
     </td>
-    <td align="center">
+    <td align="center" width="100%">
       <a href="pics/002_NAVI_3D.jpg">
         <img src="pics/002_NAVI_3D.jpg" />
       </a><br><em>PCB Layout 3D</em>
@@ -75,34 +75,33 @@ Dual 32-bit ARM MCU Board with CPLD
 <table>
   <tr>
     <td width="65%">
-    <a href="pics/IMG_FPANEL_PTH.JPG"><img src="pics/IMG_FPANEL_PTH.JPG" height="300"/></a>
+    <a href="pics/IMG_FPANEL_PTH.JPG"><img src="pics/IMG_FPANEL_PTH.JPG" /></a>
     <br><em>Front Panel Device</em>
     </td>
     <td>
-    <a href="pics/IMG_5588_MP3.JPG"><img src="pics/IMG_5588_MP3.JPG" height="300"/></a>
+    <a href="pics/IMG_5588_MP3.JPG"><img src="pics/IMG_5588_MP3.JPG"/></a>
     <br><em>Embedded MP3 Player ( AT91SAM7S64 + UDA1334 ) </em>
     </td>
   </tr>
 </table>
 
-
 ---
 
 <table>
   <tr>
-    <td align="center">
+    <td align="center" width="33%">
       <a href="pics/Navi4Gen.png">
-        <img src="pics/Navi4Gen.png" width="75%" />
+        <img src="pics/Navi4Gen.png" />
       </a><br><em>Enclosure 3D model</em>
     </td>
-    <td align="center">
+    <td align="center" width="33%">
       <a href="pics/vystavka2008.jpg">
         <img src="pics/vystavka2008.jpg" />
       </a><br><em>Presentation of the device at an automotive and transport expo</em>
     </td>
-    <td align="center">
+    <td align="center" width="33%">
       <a href="pics/19-12-07_1257.jpg">
-        <img src="pics/19-12-07_1257.jpg" width="75%" />
+        <img src="pics/19-12-07_1257.jpg" />
       </a><br><em>Devices assembly process</em>
     </td>
     
@@ -113,25 +112,28 @@ Dual 32-bit ARM MCU Board with CPLD
 
 ### PCB Layout
 
-<a href="pics/001_NAVI_PCB.JPG"><img src="pics/001_NAVI_PCB.JPG" width="800px"/></a>
+<a href="pics/001_NAVI_PCB.JPG"><img src="pics/001_NAVI_PCB.JPG" width="40%"/></a>
 
 <em>PCB Layout</em>
 
+
 ### PCB Layout 3D
 
-<a href="pics/002_NAVI_3D.jpg"><img src="pics/002_NAVI_3D.jpg" width="800px"/></a>
+<a href="pics/002_NAVI_3D.jpg"><img src="pics/002_NAVI_3D.jpg" width="40%"/></a>
 
 <em>PCB Layout 3D </em>
 
+
 ### Main Board
 
-<a href="pics/003_NAVI_PHT.jpg"><img src="pics/003_NAVI_PHT.jpg" width="800px"/></a>
+<a href="pics/003_NAVI_PHT.jpg"><img src="pics/003_NAVI_PHT.jpg" width="40%"/></a>
 
 <em>Main Board</em>
 
+
 ### Assembled Device
 
-<a href="pics/autonavi2008tbl.jpg"><img src="pics/autonavi2008tbl.jpg" width="800px"/></a>
+<a href="pics/autonavi2008tbl.jpg"><img src="pics/autonavi2008tbl.jpg" width="40%"/></a>
 
 <em>Assembled Device</em>
 

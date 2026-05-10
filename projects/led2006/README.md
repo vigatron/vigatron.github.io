@@ -14,11 +14,11 @@
 
 Разработка V01G04A81 / EagleCAD  
   
-Изготовление плат :
+Изготовление плат : [PCB TOP LAYER](https://vigatron.github.io/projects/led2006/PLATINE_A.pdf)
  - VDMAIS
 
 Пайка светодиодов :
- - VDMAIS
+ - VDMAIS 27.10.2006 [order_110035](https://vigatron.github.io/projects/led2006/Рахунок_110035.rtf)
  - и некоторые мелкие подрядчики
 
 
@@ -26,11 +26,11 @@
 
 <table>
   <tr>
-    <td align="center">
-    <a href="25-11-06_1306.jpg"><img src="25-11-06_1306.jpg" width="600px" /></a><br><em>10x8 leds sectors</em>
+    <td align="center" width="40%">
+    <a href="25-11-06_1306.jpg"><img src="25-11-06_1306.jpg" /></a><br><em>10x8 leds sectors</em>
     </td>
-    <td align="center">
-    <a href="IMAG0096_leds.JPG"><img src="IMAG0096_leds.JPG" width="80%" /></a><br><em>Бегущая строка , 8 модулей</em>
+    <td align="center" width="30%">
+    <a href="IMAG0096_leds.JPG"><img src="IMAG0096_leds.JPG" /></a><br><em>Бегущая строка , 8 модулей</em>
     </td>
     <td align="center">
     <a href="27-11-06_1538.jpg"><img src="27-11-06_1538.jpg" /></a><br><em>Бегущая строка , 8 модулей</em>
