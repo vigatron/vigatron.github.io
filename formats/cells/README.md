@@ -142,10 +142,20 @@ Row 1: [tile0][tile1][tile2] ... [tile255]
 После активации строки (ACTIVATE) данные могут считываться непрерывно,
 при этом количество одновременно считываемых тайлов зависит от ширины шины памяти :
 
-- 1x SDRAM x16 — за непрерывный burst покрывается до 64 тайлов
-- 1x SDRAM x32 — до 128 тайлов
-- 2x SDRAM x32 — до 256 тайлов
+<br>
 
+|    | SDRAM Configuration        | Tiles per burst          |
+|----|----------------------------|--------------------------|
+| 1× | SDRAM ×16 / A0-A7          | up to  64 tiles / burst  |
+| 2× | SDRAM ×16 / A0-A7          | up to 128 tiles / burst  |
+| 1× | SDRAM ×16 / A0-A8          | up to 128 tiles / burst  |
+| 2× | SDRAM ×16 / A0-A8          | up to 256 tiles / burst  |
+| 1× | SDRAM ×32 / A0-A7          | up to 128 tiles / burst  |
+| 2× | SDRAM ×32 / A0-A7          | up to 256 tiles / burst  |
+| 1× | SDRAM ×32 / A0-A8          | up to 256 tiles / burst  |
+
+
+---
 
 <table>
   <tr>
@@ -172,6 +182,60 @@ Row 1: [tile0][tile1][tile2] ... [tile255]
   </tr>
 </table>
 
+---
+
+### x16 Bus (Data Width x16)
+
+For x16 organization, a page size of 256 words ($2^8$) is typical for low-density chips (16–64 Mb),
+while 512 words ($2^9$) is common for medium-density chips (128–256 Mb).
+
+#### Page Size: 256 (Column Address $A0$–$A7$)
+
+| Manufacturer  | Series / Model           |  Density     |  Organization                  |
+|---------------|--------------------------|--------------|--------------------------------|
+| Micron        | MT48LC1M16A1             | 16 Mb        | 1M x 16 (512K x 16 x 2 banks)  |
+| Micron        | MT48LC4M16A2             | 64 Mb        | 4M x 16 (1M x 16 x 4 banks)    |
+| Winbond       | W9816G6 / W9864G6        | 16 / 64 Mb   | 1M x 16 / 4M x 16              |
+| ISSI          | IS42S16100 / IS42S16400  | 16 / 64 Mb   | 1M x 16 / 4M x 16              |
+| Alliance      | AS4C1M16S / AS4C4M16S    | 16 / 64 Mb   | 1M x 16 / 4M x 16              |
+
+#### Page Size: 512 (Column Address $A0$–$A8$)
+
+| Manufacturer  | Series / Model           |  Density     |  Organization                  |
+|---------------|--------------------------|--------------|--------------------------------|
+| Micron        | MT48LC8M16A2             | 128 Mb       |  8M x 16 (2M x 16 x 4 banks)   |
+| Micron        | MT48LC16M16A2            | 256 Mb       | 16M x 16 (4M x 16 x 4 banks)   |
+| Winbond       | W9812G6 / W9825G6        | 128 / 256 Mb |  8M x 16 / 16M x 16            |
+| ISSI          | IS42S16800 / IS42S16160  | 128 / 256 Mb |  8M x 16 / 16M x 16            |
+| Alliance      | AS4C8M16S / AS4C16M16S   | 128 / 256 Mb |  8M x 16 / 16M x 16            |
+
+---
+
+### x32 Bus (Data Width x32)
+
+In x32 chips, the column address space is often reduced  
+compared to x16 chips of the same density to maintain a similar total page size in bytes.
+
+#### Page Size: 256 (Column Address $A0$–$A7$)
+
+| Manufacturer  | Series / Model           |  Density     |  Organization                  |
+|---------------|--------------------------|--------------|--------------------------------|
+| Micron        | MT48LC2M32B2             | 64 Mb        | 2M x 32 (512K x 32 x 4 banks)  |
+| ISSI          | IS42S32200               | 64 Mb        | 2M x 32 (512K x 32 x 4 banks)  |
+| Winbond       | W9864G2                  | 64 Mb        | 2M x 32                        |
+| Alliance      | AS4C2M32S                | 64 Mb        | 2M x 32                        |
+
+#### Page Size: 512 (Column Address $A0$–$A8$)
+
+| Manufacturer  | Series / Model           |  Density     |  Organization                  |
+|---------------|--------------------------|--------------|--------------------------------|
+| Micron        | MT48LC4M32B2             | 128 Mb       | 4M x 32 (1M x 32 x 4 banks)    |
+| Micron        | MT48LC8M32B2             | 256 Mb       | 8M x 32 (2M x 32 x 4 banks)    |
+| ISSI          | IS42S32400 / IS42S32800  | 128 / 256 Mb | 4M x 32 / 8M x 32              |
+| Winbond       | W9812G2 / W9825G2        | 128 / 256 Mb | 4M x 32 / 8M x 32              |
+| Alliance      | AS4C4M32S / AS4C8M32S    | 128 / 256 Mb | 4M x 32 / 8M x 32              |
+
+<br>
 
 ---
 
@@ -182,8 +246,13 @@ CMBoards — custom hardware platform based on STM32 MCU + Xilinx FPGA + externa
 * CMBoards HDM32F407HDMI : STM32F407 + XC6SLX9  + 1x SDRAM x16 + HDMI_OUT
 * CMBoards HDM32F746HDMI : STM32F746 + XC6SLX9  + 1x SDRAM x32 + HDMI_OUT
 * CMBoards HDM32H750HDMI : STM32F750 + XC6SLX9  + 1x DDR   x32 + HDMI_OUT
-* CMBoards HDM32F746TFT7 : STM32F746 + XC6SLX16 + 2x SDRAM x32 + TFT7_800_480
+* CMBoards HDM32F746TFT7 : STM32F746 + XC6SLX16 + 2x SDRAM x16 + TFT7_800_480
 * CMBoards HDM32H750TFT7 : STM32H750 + XC6SLX16 + 1x DDR   x32 + TFT7_800_480
+
+<br>
+
+[BRD32F407HDMIR3 Board Details](https://vigatron.github.io/projects/cmboards/brd32f407hdmir3/)
+
 
 ---
 
@@ -192,11 +261,6 @@ CMBoards — custom hardware platform based on STM32 MCU + Xilinx FPGA + externa
 
 - Размер файла фиксирован: 16384 байта
 - Данные хранятся без сжатия
-
----
-Links : 
-
-[BRD32F407HDMIR3 Board Details](https://vigatron.github.io/projects/cmboards/brd32f407hdmir3/)
 
 
 ---
