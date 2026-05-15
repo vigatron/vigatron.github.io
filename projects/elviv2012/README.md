@@ -268,11 +268,15 @@ This repository contains PHP and JavaScript libraries for parsing and processing
 
 ## Stereo Camera (own project)
 
-| Property           | Value                       |
-|--------------------|-----------------------------|
-| Started on         | Aug 2014                    |
-| Author             | Viktor Glebov (V01G04A81)   |
+| Property                      | Value                       |
+|-------------------------------|-----------------------------|
+| Started on                    | Aug 2014                    |
+| Partial Emulation Done        | Jan - Apr 2015              |
+| Hardware Design Lite + Base   | Aug 2015                    |
+| Hardware Design XXL version   | May 2016                    |
+| Author                        | Viktor Glebov (V01G04A81)   |
 
+<br>
 
 &bull; Designed system architecture: STM32 + FPGA + SDRAM  
 &bull; Dual synchronized camera interface  
@@ -322,10 +326,16 @@ This repository contains PHP and JavaScript libraries for parsing and processing
 
 ## 3-Axis CNC Controller | Proprietary High-Performance Platform
 
-| Property           | Value                                           |
-|--------------------|-------------------------------------------------|
-| Start Date         | February 2015                                   |
-
+| Property                               | Value                 |
+|----------------------------------------|-----------------------|
+| Start Date                             | February 2015         |
+| PCB Design Done                        | April    2015         |
+| Engrave Software Draft (v1 Beta)       | Jul      2015         |
+| Bootloader Draft (v1 Beta)             | Dec      2015         |
+| Engrave Software v2 Demo / trade show  | Feb      2016         |
+| Engrave Software v2 Stable             | - / unfinished        |
+| CNC Software                           | - / unfinished        |
+| Server / Client software               | - / unfinished        |
 
 **Contributors:**
 - **V01G04A81** — system architecture, hardware design, embedded software development  
@@ -334,53 +344,103 @@ This repository contains PHP and JavaScript libraries for parsing and processing
 
 <i><b>Full-cycle hardware/firmware development with custom "Engrave Version" for client use.</b></i>
 
-&bull; <b>System Ownership:</b> Independently developed a proprietary motion control architecture (STM32 + FPGA + L6472).  
+&bull; <b>System Ownership</b> Independently developed a proprietary motion control architecture (STM32 + FPGA + L6472).  
 
-&bull; <b>Custom Implementation:</b> Engineered a specialized "Engrave Version" tailored to specific client requirements for precision engraving.  
+&bull; <b>Custom Implementation</b> Engineered a specialized "Engrave Version" tailored to specific client requirements for precision engraving.  
 
-&bull; <b>Architectural Innovation:</b>
-
+&bull; <b>Architectural Innovation</b>
 + Transitioned from legacy AVR systems to a high-speed hybrid processing model (proposed Feb 2015).
-
 + Leveraged FPGA for hardware-level pulse generation to ensure zero-jitter motion control.
 
-&bull; <b>Design Standards:</b> Developed based on STMicroelectronics and Avnet industrial reference designs, ensuring robust EMI/EMC performance.
+&bull; <b>Design Standards</b>
+Developed based on STMicroelectronics and Avnet industrial reference designs, ensuring robust EMI/EMC performance.
 
-    Retained full IP rights for the core hardware architecture while delivering a licensed functional module for the client's engraving equipment.
+Retained full IP rights for the core hardware architecture while delivering a licensed functional module for the client's engraving equipment.
 
-
-#### Hardware
-
-&bull; STM32F407  
-&bull; XC6SLX9  
-&bull; MT48LC16M16A2P-75  
-&bull; L6472 x3  
-&bull; Extension I/O port  
+<table>
+<tr><td valign="top"><b>Hardware</b><br>
+&bull; STM32F407<br>
+&bull; XC6SLX9<br>
+&bull; MT48LC16M16A2P-75<br>
+&bull; L6472 x3<br>
+&bull; Extension I/O port<br>
+</td>
+<td><b>Software</b><br>
+&bull; FreeRTOS<br>
+&bull; App core<br>
+&bull; STM32 peripheral drivers<br>
+&bull; L6472 drivers<br>
+&bull; VHGUI2016 @ 800x480 port (over SPI, draft)<br>
+&bull; Verilog / Testbenches<br>
+</td>
+</tr>
+</table>
 
 <i>Status: Gerbers Sent to production 13 Apr 2015</i>
 
-#### Software
-&bull; FreeRTOS  
-&bull; App core  
-&bull; STM32 peripheral drivers  
-&bull; L6472 drivers  
-&bull; VHGUI2016 @ 800x480 port (over SPI, draft)  
-&bull; Verilog / Testbenches  
+
+&bull; <b>License Management</b> (electro-lviv.com/electro-soft)
+Designed and deployed a dedicated <b>License Validation Server</b>  
+to manage client-side activation (active Nov 2015 – Mar 2016).
+
 
 #### Notes
 
-&bull;  <b>GUI Framework Development:</b>  Iterative evolution of the proprietary interface: VHGUI (v.2004 → v.2008 → v.2012 → v.2016).
-<br>
+&bull;  <b>GUI Framework Development</b>  
+Iterative evolution of the proprietary interface: VHGUI (v.2004 → v.2008 → v.2012 → v.2016).
+
+&bull;  <b>Crossplatform Architecture</b> The CNC Pro v2.0 program was developed in C++ / gcc / Windows.
+It was launched and debugged in a special emulator without being tied to a specific platform.
+GUI and functionality emulation during development was carried out in Windows, after which the program was built for STM32F407 (porting).
 
 &bull; <b>Software Releases:</b>
 
-+ <b>v1.0 "Engraver" (Jun 2015):</b> Successful deployment of the functional draft for engraving operations.
-+ <b>v2.0 "CNC Pro" (Jan–Apr 2016):</b> Advanced professional version focused on complex 3-axis machining (Stable Beta).
++ <b>v1.0 Draft "Engraver"   (Jun 2015):</b> Successful deployment of the functional draft for engraving operations.
++ <b>v1.0 Draft "Bootloader" (Dec 2015):</b> Successful deployment of the functional draft. General functionality
++ <b>v2.0 Demo  "Engraver"   (Feb 2016):</b> Ported to STM32F407 specifically for exhibition purposes (equipment showcase).
 
-&bull; <b>License Management:</b> Designed and deployed a dedicated <b>License Validation Server</b> (electro-lviv.com/electro-soft) to manage client-side activation (active Nov 2015 – Mar 2016).
+&bull; <b>Software On Hold:</b>
+
++ <b>Engrave Software v2.0 Stable</b> Engraver Stable version with features advanced GUI 
++ <b>v2.0 "CNC Pro"  (Jan–Apr 2016):</b> Advanced professional version focused on complex 3-axis machining
++ <b>Server side application:</b>  Uploading and storing tasks (files) by clients + diagnostics
++ <b>Remote Tasks & diagnostic over TCP/IP:</b>  hardware & embedded software for NFC + BT + GPRS features
+
+<br>
+
++ Engrave Software v2 (Stable)    | NOT finished or released due to unpridicted conditions / sabotauge from "partner"
++ CNC Software                    | NOT finished or released due to unpridicted conditions / sabotauge from "partner"
++ Server Side software            | NOT finished or released - Remote Tasks over TCP/IP.
 
 
-<br><br><br>
+Important:<br>
+
+<i>
+
+> The <b>OnHold</b> status implies that the programs and modules were not released,
+> and work on them was not completed due to deliberate sabotage by a partner
+> (with the intention of registering and appropriating sole copyright ownership
+over the development — unilaterally, without notifying the other partners and deliberately misleading them).
+
+</i>
+
+Client story - The client asked for urgent help and told his story:
+
+<i>
+
+> "The previous software developer left and did not provide the entrepreneur with the source code, only binary.
+> As a result, clients are experiencing equipment malfunctions and damage to workpieces.
+> The device is operating incorrectly. In total, the clients have about 30 working units that need to be fixed."
+
+</i>
+
+Some technical details before start:
+
+> The client presented a dusty PCB with deliberately obscured or scratched-off IC markings (possibly removed from another device).
+> The board was clearly hand-soldered, exhibiting poor soldering quality, residual sticky flux, and bent connectors.
+> Multiple wire jumpers were added to re‑establish connections between traces and IC pins (likely layout corrections or post‑manufacturing fixes).
+> The PCB had no component labeling whatsoever and completely lacked a silkscreen layer.
+> The main controller was an ATMega128 microcontroller, accompanied by three L6472 stepper motor driver ICs.
 
 ---
 
