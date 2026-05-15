@@ -32,13 +32,13 @@ This repository contains PHP and JavaScript libraries for parsing and processing
   <tr>
     <td align="center">
       <a href="pics_web/pcb3dvis.png">
-        <img src="pics_web/pcb3dvis.png" width="400"><br>
+        <img src="pics_web/pcb3dvis.png" width="400"/><br>
         <b>PCB 3D Visualization</b>
       </a>
     </td>
     <td align="center">
       <a href="pics_web/icsdb.png">
-        <img src="pics_web/icsdb.png" width="400"><br>
+        <img src="pics_web/icsdb.png" width="400"/><br>
         <b>BOM Manager</b>
       </a>
     </td>
@@ -49,13 +49,13 @@ This repository contains PHP and JavaScript libraries for parsing and processing
   <tr>
     <td align="center">
       <a href="pics_web/gcode1.png">
-        <img src="pics_web/gcode1.png" width="400"><br>
+        <img src="pics_web/gcode1.png" width="400"/><br>
         <b>Gerber Files Viewer</b>
       </a>
     </td>
     <td align="center">
       <a href="pics_web/gcode2.png">
-        <img src="pics_web/gcode2.png" width="400"><br>
+        <img src="pics_web/gcode2.png" width="400"/><br>
         <b>Gerber Files Viewer (Zoom)</b>
       </a>
     </td>
@@ -63,7 +63,7 @@ This repository contains PHP and JavaScript libraries for parsing and processing
 </table>
 
 
-<br><br><br>
+<br><br>
 
 
 ---
@@ -108,7 +108,7 @@ This repository contains PHP and JavaScript libraries for parsing and processing
 
 ---
 
-<br><br><br>
+<br><br>
 
 
 ## Diesel Motor Controller (HOPA Motortuning GmbH / Optimex Import Export GmbH)
@@ -123,20 +123,20 @@ This repository contains PHP and JavaScript libraries for parsing and processing
 &bull; PCB layout design  
 &bull; Production Test Software & QA  
 
-<br><br><br>
+<br><br>
 
 
 <table>
   <tr>
     <td align="center">
       <a href="pics_hopa/hpc_dev.JPG">
-        <img src="pics_hopa/hpc_dev.JPG" height="500" alt="Device"><br>
+        <img src="pics_hopa/hpc_dev.JPG" height="500" alt="Device"/><br>
         <b>Device</b>
       </a>
     </td>
     <td align="center">
       <a href="pics_hopa/HPC_From_Factory.png">
-        <img src="pics_hopa/HPC_From_Factory.png" height="500" alt="Serie x5"><br>
+        <img src="pics_hopa/HPC_From_Factory.png" height="500" alt="Serie x5"/><br>
         <b>Serie x5</b>
       </a>
     </td>
@@ -144,11 +144,11 @@ This repository contains PHP and JavaScript libraries for parsing and processing
 </table>
 
 
-<br><br><br>
+<br><br>
 
 ---
 
-<br><br><br>
+<br><br>
 
 
 ## GPS Tracker (Taxi / Dubai)
@@ -156,7 +156,7 @@ This repository contains PHP and JavaScript libraries for parsing and processing
 | Property           | Value                       |
 |--------------------|-----------------------------|
 | Started on         | Sep 2014                    |
-| Gerbers Completed  | Dec 2014                    |
+| Gerbers Completed  | Oct 2014                    |
 | Embedded Software  | Feb 2015                    |
 | GUI Tools & Config | Mar 2015                    |
 | Tests on           | Apr 2015                    |
@@ -172,7 +172,7 @@ This repository contains PHP and JavaScript libraries for parsing and processing
 <br>
 
 <p>
-<img src="pics_dubai/GPSTrackDevice.png" height="400" alt="Device"><br>
+<img src="pics_dubai/GPSTrackDevice.png" height="400" alt="Device"/><br>
 </p>
 
 
@@ -208,13 +208,13 @@ This repository contains PHP and JavaScript libraries for parsing and processing
 <table>
   <tr>
     <td>
-    <img src="pics_dubai/pcb_top.jpg" height="240" alt="Device"><br>
+    <img src="pics_dubai/pcb_top.jpg" height="240" alt="Device"/><br>
     </td>
     <td>
-    <img src="pics_dubai/gerbv_v1p0.png" height="240" alt="Device"><br>
+    <img src="pics_dubai/gerbv_v1p0.png" height="240" alt="Device"/><br>
     </td>
     <td>
-    <img src="pics_dubai/pcb_bot.jpg" height="240" alt="Device"><br>
+    <img src="pics_dubai/pcb_bot.jpg" height="240" alt="Device"/><br>
     </td>
   </tr>
 </table>
@@ -224,19 +224,19 @@ This repository contains PHP and JavaScript libraries for parsing and processing
   <tr>
     <td>
       <a href="pics_dubai/scr_dubai1.png">
-        <img src="pics_dubai/scr_dubai1.png" height="300"><br>
+        <img src="pics_dubai/scr_dubai1.png" height="300"/><br>
         <b>Device</b>
       </a>
     </td>
     <td>
       <a href="pics_dubai/scr_dubai2.png">
-        <img src="pics_dubai/scr_dubai2.png" height="300"><br>
+        <img src="pics_dubai/scr_dubai2.png" height="300"/><br>
         <b>Serie x5</b>
       </a>
     </td>
     <td>
       <a href="pics_dubai/scr_dubai3.png">
-        <img src="pics_dubai/scr_dubai3.png" height="300"><br>
+        <img src="pics_dubai/scr_dubai3.png" height="300"/><br>
         <b>3D Model</b>
       </a>
     </td>
@@ -247,24 +247,87 @@ This repository contains PHP and JavaScript libraries for parsing and processing
 <table>
   <tr>
     <td>
-    <img src="pics_dubai/scr_enclosure_1.png" height="300"><br>
+    <img src="pics_dubai/scr_enclosure_1.png" height="300"/><br>
     </td>
     <td>
-    <img src="pics_dubai/post_hk4.png" height="300"><br>
+    <img src="pics_dubai/post_hk4.png" height="300"/><br>
     </td>
     <td>
-    <img src="pics_dubai/post_hk3.png" height="300"><br>
+    <img src="pics_dubai/post_hk3.png" height="300"/><br>
     </td>
   </tr>
 </table>
 
 
 
-<br><br><br>
+<br><br>
 
 ---
 
-<br><br><br>
+
+## DGPS Module NEO-7P
+
+| Property                      | Value                       |
+|-------------------------------|-----------------------------|
+| Started on                    | Dec 2014                    |
+| Prototypes assembled          | Mar 2015                    |
+| Successfully tested           | Apr 2015                    |
+
+<br>
+
+<b>NEO-7P GPS module </b>  
+Development and selection of the passive antenna circuit configuration (LNA amplifier, SAW filter, GPS Patch antenna).
+
+<b>Enhanced technical description for the project</b>
+u-blox NEO-7P is a high-precision GNSS module from the u-blox 7 series (now EOL, succeeded by newer modules like NEO-F9P).  
+It supports Precise Point Positioning (PPP) and Differential GPS (DGPS) for accuracy better than 1 meter.
+
+<img src="docs_dgps/image.png" height="400"/>
+
+
+<b>Key features and specifications</b>
+
++ GNSS support: GPS L1 C/A, GLONASS L1 FDMA, QZSS L1 C/A, SBAS (WAAS, EGNOS, MSAS).
++ Position accuracy:
+    * Standalone GPS: ~2.5 m CEP.
+    * With SBAS: ~2.0 m CEP.
+    * With SBAS + PPP: < 1 m CEP.
++ Sensitivity: Up to -161 dBm (tracking).
++ Time to First Fix (TTFF): Cold start ~30 s, aided ~5 s, reacquisition ~1 s.
++ Channels: 56-channel u-blox 7 engine.
+
+##### 3D Models & PCB
+
+<div align="center">
+<table>
+  <tr>
+    <td>
+    <img src="docs_dgps/dgps_pcb_top.png" height="200" />
+    </td>
+    <td>
+    <img src="docs_dgps/dgps_photo_top.png" height="200" />
+    </td>
+    <td>
+    <img src="docs_dgps/dgps_pcb_bot.png" height="200" />
+    </td>
+    <td>
+    <img src="docs_dgps/dgps_photo_bot.png" height="200" />
+    </td>
+  </tr>
+</table>
+</div>
+
+
++ PCB manufactoring: ДП ГАЛЬВАНОТЕХНIКА / 3 weeks / x2 prototypes
+[viktor_glebov_quittance_2xPCBPlug7.pdf](docs_dgps/viktor_glebov_quittance_2xPCBPlug7.pdf)
+<br>
++ Parts Lists:  [Рахунок_9329.rtf](docs_dgps/Рахунок_9329.rtf)
+    * SAW RF FILTER 1575.42 MHZ
+    * IC AMP MMIC RF LNA 20DB TSLP-6
+    * IC AMP LOW NOISE 6-UDFN
+
+
+---
 
 ## Stereo Camera (own project)
 
@@ -282,24 +345,52 @@ This repository contains PHP and JavaScript libraries for parsing and processing
 &bull; Dual synchronized camera interface  
 &bull; HDMI output + WiFi module integration  
 
+
 <p>
-<img src="pics_cam/stereocam_present.png" height="1200" alt="Device">
+<img src="pics_cam/stereocam_present.png" height="1200" alt="Device" />
 </p>
 
 #### Hardware
 
-&bull; STM32F746  
-&bull; XC6SLX16  
-&bull; MT48LC16M16A2P-6A x2  
-&bull; HDMI Output  
-&bull; Micro SD-Card  
-&bull; USB Interface  
-
+<table>
+    <thead>
+      <tr>
+        <th>Mini Version Draft 2013</th>
+        <th>Base Version 2014</th>
+        <th>XXL Version  2015</th>
+      </tr>
+    </thead>
+<tr>
+<td><img src="pics_cam/stereo_mini.jpg" height="240" alt="Device" /></td>
+<td><img src="pics_cam/stereo_base.jpg" height="240" alt="Device" /></td>
+<td><img src="pics_cam/stereo_xxl.jpg"  height="240" alt="Device" /></td>
+</tr>
+<tr>
+<td></td>
+<td valign="top">
+<b>Base Version</b><br>
+&bull; STM32F407<br>
+&bull; XC6SLX9<br>
+&bull; MT48LC16M16A2P-75 x2<br>
+&bull; USB Interface<br>
+</td>
+<td>
+<b>XXL Version</b><br>
+&bull; STM32F746<br>
+&bull; XC6SLX16<br>
+&bull; MT48LC16M16A2P-6A x2<br>
+&bull; HDMI Output<br>
+&bull; Micro SD-Card<br>
+&bull; USB Interface<br>
+</td>
+</tr>
+</table>
 
 #### Software
 
+&bull; Embedded C/C++
 &bull; FreeRTOS  
-&bull; Verilog / Testbenches  
+&bull; VHDL / Verilog + Testbenches  
 
 #### Key Functionalities
 
@@ -313,26 +404,26 @@ This repository contains PHP and JavaScript libraries for parsing and processing
 #### Example
 
 <p>
-<img src="pics_cam/roadsigns.jpg" height="350" alt="Device">
+<img src="pics_cam/roadsigns.jpg" height="350" alt="Device" />
 </p>
 
 
-<br><br><br>
+<br><br>
 
 ---
 
-<br><br><br>
+<br><br>
 
 
 ## 3-Axis CNC Controller | Proprietary High-Performance Platform
 
 | Property                               | Value                 |
 |----------------------------------------|-----------------------|
-| Start Date                             | February 2015         |
-| PCB Design Done                        | April    2015         |
-| Engrave Software Draft (v1 Beta)       | Jul      2015         |
-| Bootloader Draft (v1 Beta)             | Dec      2015         |
-| Engrave Software v2 Demo / trade show  | Feb      2016         |
+| Start Date                             | Feb 2015              |
+| PCB Design Done                        | Apr 2015              |
+| Engrave Software Draft (v1 Beta)       | Jul 2015              |
+| Bootloader Draft (v1 Beta)             | Dec 2015              |
+| Engrave Software v2 Demo / trade show  | Feb 2016              |
 | Engrave Software v2 Stable             | - / unfinished        |
 | CNC Software                           | - / unfinished        |
 | Server / Client software               | - / unfinished        |
@@ -342,7 +433,8 @@ This repository contains PHP and JavaScript libraries for parsing and processing
 - **Sprk81** — hardware abstraction layer (HAL) design, low-level drivers (initial implementation)  
 - **GMad** — sensors integration, mechanical system consulting  
 
-<i><b>Full-cycle hardware/firmware development with custom "Engrave Version" for client use.</b></i>
+<i><b>
+Full-cycle hardware/firmware development of a multifunctional CNC controller with a custom "Engrave Version" option for client use.</b></i>  
 
 &bull; <b>System Ownership</b> Independently developed a proprietary motion control architecture (STM32 + FPGA + L6472).  
 
@@ -357,6 +449,9 @@ Developed based on STMicroelectronics and Avnet industrial reference designs, en
 
 Retained full IP rights for the core hardware architecture while delivering a licensed functional module for the client's engraving equipment.
 
+<img src="docs_stk/stanok_pcb3d_draft_v0p6b.png" height="350" alt="Device" />
+<img src="docs_stk/stanok_pcb_draft_v0p6.png"    height="350" alt="Device" />
+  
 <table>
 <tr><td valign="top"><b>Hardware</b><br>
 &bull; STM32F407<br>
@@ -375,16 +470,54 @@ Retained full IP rights for the core hardware architecture while delivering a li
 </td>
 </tr>
 </table>
+  
+&bull; <b>Status</b>
+Gerbers Sent to production 13 Apr 2015  
+Manufacturer: BYSCO TECHNOLOGY LIMITED  
+Quotation: [The quotation of DraftStanok1 on 13 April 2015](docs_stk/ThequotationofDraftStanok1on13thApril2015.pdf)
+Gerbers: [Gerber Files - TOP Layer, Top Silk Layer, KeepOut Layer](docs_stk/stanok1_gerbers_partially_13apr2015.zip)
+  
+  
+> PCB Gerber files authored and submitted to production by V01G04A81 (Apr 2015).  
+> A manufacturer quotation (BYSCO TECHNOLOGY LIMITED) was issued to the author upon file submission,  
+> confirming authorship of the hardware design. The client subsequently arranged and paid for their own  
+> production run under a non-exclusive license. Full IP rights to the hardware architecture are retained by the author.
+  
+  
+<br>
+  
+&bull; <b>System configurator</b> - Using Automated Device Layout Systems  
+Rapid generation of board architecture, schematics, and PCB layouts  
+is enabled by the electro-lviv.com modular design tool.  
+It automatically builds the device architecture by arranging off-the-shelf modules  
+(ICs database, IC modules, connectors, pinouts, BOM file).  
 
-<i>Status: Gerbers Sent to production 13 Apr 2015</i>
+<i>Note:</i> Component description lists, RLC components, connectors, and ready-made modular assemblies  
+are hierarchically organized into a multi-level finished structure.
 
+<br>
 
 &bull; <b>License Management</b> (electro-lviv.com/electro-soft)
 Designed and deployed a dedicated <b>License Validation Server</b>  
 to manage client-side activation (active Nov 2015 – Mar 2016).
 
++ Engrave Machines Licenses
+    * Bootloader V1.02015-10-31 02:05:26
+    * Engrave Software V1.02015-10-31 02:09:33
+    * Engrave Software V1.12015-10-31 02:09:47
 
-#### Notes
++ CNC Controller Licenses
+    * CNC Bootloader V1.02015-10-31 01:52:47
+    * CNC Application V1.02015-10-31 02:18:25
+
+<br>
+
+<img src="docs_stk/elviv_electro_soft_license_manager.png" height="350" alt="Device" />  
+  
+https://web.archive.org/web/20151127081327/http://electro-lviv.com/electro-soft/  
+( Wayback Machine Link to License Manager )  
+
+<br>
 
 &bull;  <b>GUI Framework Development</b>  
 Iterative evolution of the proprietary interface: VHGUI (v.2004 → v.2008 → v.2012 → v.2016).
@@ -424,27 +557,26 @@ over the development — unilaterally, without notifying the other partners and 
 
 </i>
 
-Client story - The client asked for urgent help and told his story:
+The client, an entrepreneur specializing in engraving equipment (not CNC controllers), reached out for urgent assistance and shared their story:
 
 <i>
 
-> "The previous software developer left and did not provide the entrepreneur with the source code, only binary.
-> As a result, clients are experiencing equipment malfunctions and damage to workpieces.
-> The device is operating incorrectly. In total, the clients have about 30 working units that need to be fixed."
+> I need urgent help. Here's what happened — my previous software developer walked out and took the source code with him. Left me with nothing but a compiled binary. Now my clients are dealing with malfunctions and ruined workpieces, and I've got around 30 units out there that all need to be fixed. I'm buying myself time right now — picking up their calls, making excuses — but that's not going to last. Three, maybe four months tops before they completely tear me apart.
 
 </i>
 
-Some technical details before start:
 
-> The client presented a dusty PCB with deliberately obscured or scratched-off IC markings (possibly removed from another device).
-> The board was clearly hand-soldered, exhibiting poor soldering quality, residual sticky flux, and bent connectors.
-> Multiple wire jumpers were added to re‑establish connections between traces and IC pins (likely layout corrections or post‑manufacturing fixes).
-> The PCB had no component labeling whatsoever and completely lacked a silkscreen layer.
-> The main controller was an ATMega128 microcontroller, accompanied by three L6472 stepper motor driver ICs.
+Development proceeded under severely underspecified requirements, with no official documentation, formal specifications, or structured technical references supplied by the client.
+
+> The client presented a dusty PCB with deliberately obscured or scratched-off IC markings (possibly removed from another device). The board was clearly hand-soldered, exhibiting poor soldering quality, residual sticky flux, and bent connectors. Multiple wire jumpers were added to re‑establish connections between traces and IC pins (likely layout corrections or post‑manufacturing fixes). The PCB had no component labeling whatsoever and completely lacked a silkscreen layer. The main controller was an ATMega128 microcontroller, accompanied by three L6472 stepper motor driver ICs.
+
+
+> The project presented a severe challenge due to a total absence of formal technical documentation. The client could not provide a technical specification or even a precise description of the engraving machine's operations. Instead, the only available materials were vague texts on anonymous sheets of paper, completely lacking signatures, names, company stamps, or any references to a source—essentially generic internet reprints mass-published between 2010 and 2015. Moreover, there was absolutely no information regarding the system architecture, GUI layouts, menu structures, or screen transition logic. Under these conditions, the entire hardware and software development process had to be built from the ground up, driven strictly by my own engineering intuition and understanding of how professional engraving equipment should function. To bridge this massive documentation gap and ensure a reliable design, the system logic was developed using official technical documentation and reference ecosystems from industry leaders, relying heavily on STMicroelectronics for the STM32 MCU and L6472 stepper motor drivers, and Avnet for hardware solutions combining STM32 with Xilinx boards.
+
 
 ---
 
-<br><br><br>
+<br><br>
 
 ## Boiler Controller (2 kW)
 
@@ -459,11 +591,11 @@ Some technical details before start:
 &bull; 4-digit 7-segment LED display  
 &bull; Implemented user interface (buttons + LED indication)  
 
-<br><br><br>
+<br><br>
 
 ---
 
-<br><br><br>
+<br><br>
 
 ## KVM Device ( Own project ) DIY PiKVM: Remote PC Control via 100M Ethernet (HDMI In/Out)
 
@@ -485,11 +617,11 @@ Some technical details before start:
   <em>KVM Board ( only draft version available from archive ) : Year: 2014-2015 </em>
 </p>
 
-<br><br><br>
+<br><br>
 
 ---
 
-<br><br><br>
+<br><br>
 
 ## OBD-II Multi-Protocol Diagnostic Scanner (i.MX23-based)
 
@@ -505,16 +637,16 @@ Designed and implemented an automotive diagnostic interface supporting CAN (ISO 
 <table>
   <tr>
     <td>
-    <img src="pics_obd/OBDBaseBoardTop3D.png" height="240"><br>Base board (Top)
+    <img src="pics_obd/OBDBaseBoardTop3D.png" height="240" /><br>Base board (Top)
     </td>
     <td>
-    <img src="pics_obd/OBDBaseBoardBot3D.png" height="240"><br>Base board (Bottom)
+    <img src="pics_obd/OBDBaseBoardBot3D.png" height="240" /><br>Base board (Bottom)
     </td>
     <td>
-    <img src="pics_obd/OBDMCUBoardTop3D.png" height="240"><br>iMX232 Plug (Top)
+    <img src="pics_obd/OBDMCUBoardTop3D.png" height="240" /><br>iMX232 Plug (Top)
     </td>
     <td>
-    <img src="pics_obd/OBDMCUBoardBot3D.png" height="240"><br>iMX232 Plug (Bottom)
+    <img src="pics_obd/OBDMCUBoardBot3D.png" height="240" /><br>iMX232 Plug (Bottom)
     </td>
   </tr>
 </table>
