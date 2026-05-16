@@ -548,28 +548,18 @@ GUI and functionality emulation during development was carried out in Windows, a
 
 Important:<br>
 
-<i>
-
 > The <b>OnHold</b> status implies that the programs and modules were not released,
 > and work on them was not completed due to deliberate sabotage by a partner
 > (with the intention of registering and appropriating sole copyright ownership
 over the development — unilaterally, without notifying the other partners and deliberately misleading them).
 
-</i>
-
 The client, an entrepreneur specializing in engraving equipment (not CNC controllers), reached out for urgent assistance and shared their story:
 
-<i>
-
 > I need urgent help. Here's what happened — my previous software developer walked out and took the source code with him. Left me with nothing but a compiled binary. Now my clients are dealing with malfunctions and ruined workpieces, and I've got around 30 units out there that all need to be fixed. I'm buying myself time right now — picking up their calls, making excuses — but that's not going to last. Three, maybe four months tops before they completely tear me apart.
-
-</i>
-
 
 Development proceeded under severely underspecified requirements, with no official documentation, formal specifications, or structured technical references supplied by the client.
 
 > The client presented a dusty PCB with deliberately obscured or scratched-off IC markings (possibly removed from another device). The board was clearly hand-soldered, exhibiting poor soldering quality, residual sticky flux, and bent connectors. Multiple wire jumpers were added to re‑establish connections between traces and IC pins (likely layout corrections or post‑manufacturing fixes). The PCB had no component labeling whatsoever and completely lacked a silkscreen layer. The main controller was an ATMega128 microcontroller, accompanied by three L6472 stepper motor driver ICs.
-
 
 > The project presented a severe challenge due to a total absence of formal technical documentation. The client could not provide a technical specification or even a precise description of the engraving machine's operations. Instead, the only available materials were vague texts on anonymous sheets of paper, completely lacking signatures, names, company stamps, or any references to a source—essentially generic internet reprints mass-published between 2010 and 2015. Moreover, there was absolutely no information regarding the system architecture, GUI layouts, menu structures, or screen transition logic. Under these conditions, the entire hardware and software development process had to be built from the ground up, driven strictly by my own engineering intuition and understanding of how professional engraving equipment should function. To bridge this massive documentation gap and ensure a reliable design, the system logic was developed using official technical documentation and reference ecosystems from industry leaders, relying heavily on STMicroelectronics for the STM32 MCU and L6472 stepper motor drivers, and Avnet for hardware solutions combining STM32 with Xilinx boards.
 
