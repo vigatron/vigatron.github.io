@@ -79,13 +79,11 @@
             flex-shrink: 0;
         }
 
-        .desc {
-            flex: 1;
-        }
+        .desc   { flex: 1; }
 
-        .desc2 {
-            flex: 1;
-        }
+        .desc2  { flex: 1; }
+
+        .details  { min-width: 100px; }
 
         footer {
             margin-top: 40px;
@@ -125,108 +123,76 @@
         </ul>
 
         <h2>Work Experience Details</h2>
+
+        <!-- <p id="target">Это абзац, на который будет ссылка.</p> -->
+        <!-- <a href="#target">Перейти к абзацу</a> -->
         <ul>
+
+        <!--
+            <li>
+                <span class="year"></span>
+                <span class="desc"></span>
+                <span class="desc2"></span>
+                <span class="details"></span>
+            </li>
+        -->
+
+            <!-- PUSHK -->
             <li>
                 <span class="year">2026</span>
-                <span class="desc"> <b>PUSHK</b> Archiver<br>
-                    <br>
-                    Experimental Data Compression Archiver<br>
-                    <br>
-                    Research and development of custom data compression algorithms.<br>
-                    <br>
-                    &bull; Custom transform-based compression pipeline design<br>
-                    &bull; Experimental preprocessing and entropy optimization methods<br>
-                    &bull; Benchmarking against existing compression solutions<br>
-                    &bull; Multi-stage compression prototype implementations
-
-                </span>
-                <span class="desc2">
-                    <a href="https://github.com/vigatron/pushk" target="_blank">
-                        PUSHK Project (GitHub)
-                    </a><br><br>
-                    Benchmarks:<br>
-                    <a href="https://vigatron.github.io/pushk/compression_results/test_run_01/" target="_blank">
-                        Test Run #1
-                    </a>
-                    &bull;
-                    <a href="https://vigatron.github.io/pushk/compression_results/test_run_02_rdrop/" target="_blank">
-                        Test Run #2 (R-Drop)
-                    </a><br><br>
-                    Submodules:<br>
-                    <a href="https://vigatron.github.io/pushk2pre1move/" target="_blank">pushk2pre1move</a>
-                    &bull;
-                    <a href="https://vigatron.github.io/pushk2pre2spc/" target="_blank">pushk2pre2spc</a>
-                    &bull;
-                    <a href="https://vigatron.github.io/pushk2pre3rdrop/" target="_blank">pushk2pre3rdrop</a>
-                </span>
+                <span class="desc"><b>PUSHK</b> Archiver</span>
+                <span class="desc2">Experimental Data Compression Archiver</span>
+                <span class="details"><a href="#target-pushk">[Details]</a></span>
             </li>
 
+            <!-- PSYOL-25 -->
             <li>
                 <span class="year">2025</span>
-                <span class="desc">
-                    <b>PSYOL-25</b> 32-channel / 16-bit Digital Audio Mixer <br>
-                    <br>Schematic and PCB design in KiCad.
-                    <br>
-                    <br>&bull; STM32H750-based control panel
-                    <br>&bull; 7" 800×480 TFT display
-                    <br>&bull; Modular main board with 8 audio-bank expansion slots
-                    <br>&bull; 32MB NAND Flash audio-bank module
-                    <br>&bull; 32MB SDRAM audio-bank module
-                </span>
-                <span class="desc2">
-                    Prototype Videos<br><br>
-                    <a href="https://youtu.be/ZLKKc4rG5Fo" target="_blank">PCB Prototype &bull; Digital Audio Mixer, 32
-                        channels 16-bit</a><br>
-                    <a href="https://youtu.be/VBANKYLg7Yc" target="_blank">PCB Prototype &bull; Synthesizer Control
-                        Panel
-                    </a><br>
-                    <a href="https://youtu.be/4nj9RxdhadU" target="_blank">PCB Prototype &bull; 128M Audio Bank Board,
-                        PlugIn</a><br>
-                </span>
+                <span class="desc"><b>PSYOL-25</b></span>
+                <span class="desc2">x32 channels / 16-bit Digital Audio Mixer </span>
+                <span class="details"><a href="#target-psyol-25">[Details]</a></span>
             </li>
 
+            <!-- Automotive -->
             <li>
                 <span class="year">2022-2025</span>
                 <span class="desc"> <b>Global Leader in Automotive Embedded Systems</b> <br>
                     Senior Embedded Engineer<br><br>
                     Worked on automotive embedded software within an AUTOSAR‑based environment.<br>
                     Responsibilities included integration of software components,
-                    implementation of embedded C modules,<br>participation in daily engineering syncs, and contribution
-                    to unit‑testing activities.<br>
-                    Collaborated with international engineering teams and used industry‑standard development tools.
+                    implementation of embedded C modules, participation in daily engineering syncs, and contribution
+                    to unit‑testing activities. Collaborated with international engineering teams and used industry‑standard development tools.
                 </span>
             </li>
 
+            <!-- Servo Motor Board -->
             <li>
-                <span class="year">2020-2021</span>
-                <span class="desc"> <b>Freelance During CVD</b>
-                    <br>
-                    <br>Some hobby boards designed + one embedded software project for client
-                    <br>
-                    <br><b>STM32H750 + XC6SLX9 with HDMI Output Interface board</b>
-                    <a href="https://vigatron.github.io/projects/cmboards/brd32f407hdmir3" target="_blank">Details</a>
-                    <br> ( ZX / NES / Atari / DOS Emulator )
-                    <br>
-                    <br><b>Servo motor driver board</b> ( freelance )
-                    <br>PCB prototype received from client,
-                    working on HDL (drivers) and embedded software
-                    <br>(C++ / ESP32 / TMC4671+TMC6100-BOB / GUI on 4" TFT + multilanguage support)<br>
+                <span class="year">2021</span>
+                <span class="desc"><b>Servo motor controller</b></span>
+                <span class="desc2">TMC4671+TMC6100+ESP32 based board</span>
+                <span class="details"><a href="#target-servo-4tft">[Details]</a></span>
+            </li>
 
-                    <br><b>STM32-based configurable TFT LCD power sequencing and backlight controller</b>
-                    <br>Hardware architecture PCB design and embedded firmware development
-                    <br>Generation and control of TFT bias/power rails:
-                    <br>DVDD 3.3V &bull; AVDD 10.4V &bull; VGH 16.2V &bull; VGL -7.3V &bull; VCOM &bull; VLED 9.3V /
-                    200mA
-                    <br>Implemented programmable power-on/off timing and safe LCD bias sequencing
-                    <br>Power-up sequence: DVDD → RESET → VGL → AVDD → VGH → RGB/Data → Backlight
-                    <br>
-                </span>
+            <!-- CMBoards -->
+            <li>
+                <span class="year">2020</span>
+                <span class="desc"><b>CMBoards</b></span>
+                <span class="desc2">STM32+FPGA based boards with HDMI</span>
+                <span class="details"><a href="#target-cmboards">[Details]</a></span>
+            </li>
+
+            <li>
+                <!-- <i>Freelance During CVD</i><br><br> -->
+
+                <span class="year">2020</span>
+                <span class="desc"><b>TFT backlight controller</b></span>
+                <span class="desc2">STM32-based TFT LCD power sequencing and backlight controller</span>
+                <span class="details"><a href="#target-dcdc-tft">[Details]</a></span>
             </li>
 
             <li>
                 <span class="year">2017-2020</span>
-                <span class="desc"> <b>NDA Leading International Technology Company</b><br>
-                    (respect to the team!)<br>
+                <span class="desc"> <b>NDA Leading International Technology Company</b>  (respect to the team!)<br>
                     <br>
                     * Embedded C++ projects : STM32<br>
                     * Custom assembler compiler on Python for unique MCU with custom instructions set<br>
@@ -299,9 +265,7 @@
                     <a href="https://vigatron.github.io/projects/elviv2012" target="_blank">Details</a>
                     <br>
                     <br>Developed libraries for parsing and processing industrial <b>Gerber (RS-274X)</b> and
-                    <b>Excellon</b> drill
-                    formats,
-                    <br>enabling accurate reconstruction of PCB manufacturing data.
+                    <b>Excellon</b> drill formats, enabling accurate reconstruction of PCB manufacturing data.
                     <br>Implemented support for aperture definitions, macros, interpolation, and drill mapping.
                     <br>
                     <br>Built a web-based PCB visualization platform using PHP and JavaScript.
@@ -512,10 +476,11 @@
                 <span class="year">1999</span>
                 <span class="desc">
                     Разработка утилиты на C - автоматизация чертежей Autocad / без доступа к API AutoCAD.<br>
-                    Фокус командной строки окна AutoCAD захватывался внешней утилитой через WIN-API,<br>
-                    и текст команды черчения вбивался напрямую внешней программой-утилитой.<br>
-                    Автором был написан алгоритм черчения многоступенчатого редуктора по входным параметрам.<br>
-                    на 3 листах А3 + 5 листах A4 формировались чертежи редуктора и таблица спецификации<br>
+                    <br>
+                    Фокус командной строки окна AutoCAD захватывался внешней утилитой через WIN-API,
+                    и текст команды черчения вбивался напрямую внешней программой-утилитой.
+                    Автором был написан алгоритм черчения многоступенчатого редуктора по входным параметрам.
+                    на 3 листах А3 + 5 листах A4 формировались чертежи редуктора и таблица спецификации
                     ( курсовая работа )
 
                     <br>
@@ -549,18 +514,16 @@
                 <span class="desc">
                     Участие в олимпиаде - презентация графической обучающей программы ( DOS / VGA 320x200 ),
                     <br>написана на Turbo C, демонстрировала плывущие экраны, графические меню, выборы фигур и картинок,
-                    <br>эффекты угасающей палитры ( вставки на ассемблере - palette shading effect )
+                    эффекты угасающей палитры ( вставки на ассемблере - palette shading effect )
                     <br><br>
                     Практика и обучение в одной небольшой embedded компании на территории завода Телеграфной аппаратуры
                     <br><br>
                     Разработка и запуск алгоритмического интерпретатора ( алгоритмический язык ),
-                    <br>который запускает и исполняет текстовые файлы с командами, выполняет математические операции,
-                    <br>вычисляет значения вложенных выражений ( польский код ), выводит результаты на экран,
+                    который запускает и исполняет текстовые файлы с командами, выполняет математические операции,
+                    вычисляет значения вложенных выражений ( польский код ), выводит результаты на экран,
                     подгружает вложенные модули и функции с других файлов.
                     <br>Интерпретатор разрабатывался для выполнения учебных алгоритмов по книге профессора IT кафедры (
-                    под
-                    его руководством )
-                    <br>Разработана вторая версия интерпретатора на С++,
+                    под его руководством ) Разработана вторая версия интерпретатора на С++,
                     первая версия интерпретатора была разработана самим профессором на Паскале.
                 </span>
             </li>
@@ -568,23 +531,21 @@
             <li>
                 <span class="year">1997</span>
                 <span class="desc">
-                    Разработана собственная утилита "Screen Capture" для DOS / VGA ( Interrupt based "hack" , shortkeys
-                    )
+                    Разработана собственная утилита "Screen Capture" для DOS / VGA
+                    <br>( Interrupt based "hack" , shortkeys )
                     <br><br>
                     Иногда удавалось вытягивать и сохранять экраны даже из под некоторых режимов Protected Mode,
-                    <br>скролить оперативную память во время захвата контроля программы (в поисках спрайтов).
-                    <br>Некоторые функции работы в Protected Mode были использованы из внешних источников ( книги )
-                    и не написаны автором с нуля.
-                    <br>( так как Protected Mode имел особенности, и было бы тяжело писать с нуля )
-                    <br>Не помню точно какое прерывание использовалось - возможно 15h или 16h что-то нестандартное,
-                    я даже комбинацию клавиш не помню.
-                    <br>И еще - в protected mode основная программа зависала, но дампер успевал выполнить свою функцию
-                    :)
+                    скролить оперативную память во время захвата контроля программы (в поисках спрайтов).
+                    Некоторые функции работы в Protected Mode были использованы из внешних источников ( книги )
+                    и не написаны автором с нуля. ( так как Protected Mode имел особенности, и было бы тяжело писать с нуля )
+                    Не помню точно какое прерывание использовалось - возможно 15h или 16h что-то нестандартное,
+                    я даже комбинацию клавиш не помню. И еще - в protected mode основная программа зависала,
+                    но дампер успевал выполнить свою функцию :)
                     <br><br>
                     Участие в олимпиаде в малой академии университета,
                     плюс демонстрация своей урезанной реплики игрушки Kings Bounty DOS.
-                    <br>Разработана на TurboC - с заставкой, спрайтами, управлением игроком передвижением по карте,
-                    <br>как в оригинальной версии только слегка отличающейся графикой в VGA режиме 320x200
+                    Разработана на TurboC - с заставкой, спрайтами, управлением игроком передвижением по карте,
+                    как в оригинальной версии только слегка отличающейся графикой в VGA режиме 320x200
                 </span>
             </li>
 
@@ -631,16 +592,16 @@
             <li>
                 <span class="year">1992</span>
                 <span class="desc">
-                    <b>* 286SX Compaq LTE</b> -
+                    <b>* 286SX Compaq LTE</b><br>
                     Возможность узучать QBasic на компьютере отца - графические режимы 320х200 и 640х400,
-                    <br>отрисовку
-                    простых фигур, простая примитивная анимация и управление клавишами положением фигур.
-                    <br>Разбор и анализ программы QBasic Gorillas DOS - gorilla.bas ( IBM ) - Offscreen images
-                    creation<br>
+                    <br>отрисовку простых фигур, простая примитивная анимация и управление клавишами положением фигур.
+                    Разбор и анализ программы QBasic Gorillas DOS - gorilla.bas ( IBM ) - Offscreen images creation<br>
                     <br>
-                    <b>* ПОИСК-1</b> Рисование мозайки на Basic ( get / put image )<br>
+                    <b>* ПОИСК-1</b><br>
+                    Рисование мозайки на Basic ( get / put image )<br>
                     <br>
-                    <b>* УКНЦ</b> Составление простых программ с вводом / выводом данных , параметров , псевдографики и
+                    <b>* УКНЦ</b>
+                    <br>Составление простых программ с вводом / выводом данных , параметров , псевдографики и
                     текста<br>
                 </span>
             </li>
@@ -648,7 +609,152 @@
 
         </ul>
 
+        <br>
 
+        <div>
+            <ul>
+
+            <!-- PUSHK Archiver -->
+            <br><p id="target-pushk">PUSHK</p>
+            <li>
+                <span class="year">2026</span>
+                <span class="desc"><b>PUSHK</b> Archiver : <a href="https://github.com/vigatron/pushk" target="_blank">PUSHK Project (GitHub)</a><br> 
+                    <br>
+                    Experimental Data Compression Archiver<br>
+                    <br>
+                    Research and development of custom data compression algorithms.<br>
+                    <br>
+                    &bull; Custom transform-based compression pipeline design<br>
+                    &bull; Experimental preprocessing and entropy optimization methods<br>
+                    &bull; Benchmarking against existing compression solutions<br>
+                    &bull; Multi-stage compression prototype implementations<br>
+                    <br>
+                    
+                    Benchmarks:<br>
+                    <a href="https://vigatron.github.io/pushk/compression_results/test_run_01/" target="_blank">
+                        Test Run #1
+                    </a>
+                    &bull;
+                    <a href="https://vigatron.github.io/pushk/compression_results/test_run_02_rdrop/" target="_blank">
+                        Test Run #2 (R-Drop)
+                    </a><br><br>
+                    Submodules:<br>
+                    <a href="https://vigatron.github.io/pushk2pre1move/" target="_blank">pushk2pre1move</a>
+                    &bull;
+                    <a href="https://vigatron.github.io/pushk2pre2spc/" target="_blank">pushk2pre2spc</a>
+                    &bull;
+                    <a href="https://vigatron.github.io/pushk2pre3rdrop/" target="_blank">pushk2pre3rdrop</a>
+                </span>
+            </li>
+
+            <!-- PSYOL-25 -->
+            <br><p id="target-psyol-25">PSYOL-25</p>
+
+            <li>
+                <span class="year">2025</span>
+                <span class="desc">
+                    <b>PSYOL-25</b> 32-channel / 16-bit Digital Audio Mixer <br>
+                    <br>Schematic and PCB design in KiCad.
+                    <br>
+                    <br>&bull; STM32H750-based control panel
+                    <br>&bull; 7" 800×480 TFT display
+                    <br>&bull; Modular main board with 8 audio-bank expansion slots
+                    <br>&bull; 32MB NAND Flash audio-bank module
+                    <br>&bull; 32MB SDRAM audio-bank module
+                    
+                    <br>
+                    <br>Prototype Videos<br><br>
+                    <a href="https://youtu.be/ZLKKc4rG5Fo" target="_blank">PCB Prototype &bull; Digital Audio Mixer, 32
+                        channels 16-bit</a><br>
+                    <a href="https://youtu.be/VBANKYLg7Yc" target="_blank">PCB Prototype &bull; Synthesizer Control
+                        Panel
+                    </a><br>
+                    <a href="https://youtu.be/4nj9RxdhadU" target="_blank">PCB Prototype &bull; 128M Audio Bank Board,
+                        PlugIn</a><br>
+                </span>
+            </li>
+
+            <!-- Servo Motor Board -->
+            <br><p id="target-servo-4tft">Servo motor controller</p>
+            <li>
+                <span class="year">2021</span>
+                <span class="desc"><b>Servo motor driver board</b> / freelance 
+                    <br>
+                    <br>PCB prototype received from client.
+                    <br>
+                    <br><u>ESP32 based board with</u>
+                    <br>
+                    <br>&bull; TMC4671+TMC6100
+                    <br>&bull; x1 CAN Interface
+                    <br>&bull; x2 RS-485 / MODBUS
+                    <br>&bull; I/O Ports
+                    <br>&bull; Embedded GUI / 4" TFT
+                    <br>
+                    <br><u>Implementation & Tests</u>
+                    <br>
+                    <br>&bull; TMC4671+TMC6100 HAL + Drivers
+                    <br>&bull; MODBUS Libraries integration
+                    <br>&bull; Embedded GUI with custom menu, fonts , images and icons set
+                    <br>&bull; Application core ( C++ / FreeRTOS ) with multilanguage support
+                    <br>
+                    <br>Configuration & Tests tools / PyQt
+                </span>
+            </li>
+
+            <!-- CMBoards -->
+            <br><p id="target-cmboards">CMBoards</p>
+            <li>
+                <span class="year">2020</span>
+                <span class="desc"><b>CMBoards: STM32 + FPGA Platforms with HDMI or 7" TFT Output</b>
+                <br><br>
+                STM32H750 + Xilinx XC6SLX9 (Spartan-6) based embedded boards.
+                <br><br>
+                Retro-computing and gaming platform supporting
+                ZX Spectrum, NES, Atari and DOS-class emulation systems.
+                <br><br>
+                Hardware architecture includes FPGA-based video pipeline,
+                HDMI display interface, SDRAM subsystem,
+                low-latency I/O handling and real-time peripheral control.
+                <br><br>
+                Board description:
+                <br>
+                <a href="https://vigatron.github.io/projects/cmboards/brd32f407hdmir3" target="_blank">
+                    https://vigatron.github.io/projects/cmboards/brd32f407hdmir3
+                </a>
+
+                </span>
+            </li>
+
+            <!--<br><br>Some hobby boards designed + one embedded software project for client<br> -->
+            <!--Freelance During CVD -->
+            <br><p id="target-dcdc-tft">TFT Backlight controller</p>
+            <li>
+                <span class="year">2020</span>
+                <span class="desc"><b>STM32-based configurable TFT LCD power sequencing and backlight controller</b>
+                    <br>
+                    <br>Hardware architecture + PCB design + embedded firmware development
+                    <br>
+                    <br>Implemented programmable power-on/off timing and safe LCD bias sequencing
+                    <br>
+                    <br>Generation and control of TFT bias/power rails:<br>
+                    <br>&bull; DVDD 3.3V
+                    <br>&bull; AVDD 10.4V
+                    <br>&bull; VGH 16.2V
+                    <br>&bull; VGL -7.3V
+                    <br>&bull; VCOM
+                    <br>&bull; VLED 9.3V / 200mA
+                    <br>
+                    <br>
+                    <br>Power-up sequence:<br>
+                    <br>DVDD → RESET → VGL → AVDD → VGH → RGB/Data → Backlight
+                    <br>
+                </span>
+            </li>
+
+
+            </ul>
+        </div>
+        <br>
         <footer>
             <div>
                 <a href="https://vigatron.github.io" target="https://vigatron.github.io/">

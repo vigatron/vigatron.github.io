@@ -541,12 +541,18 @@ GUI and functionality emulation during development was carried out in Windows, a
 
 <br>
 
-+ Engrave Software v2 (Stable)    | NOT finished or released due to unpridicted conditions / sabotauge from "partner"
-+ CNC Software                    | NOT finished or released due to unpridicted conditions / sabotauge from "partner"
-+ Server Side software            | NOT finished or released - Remote Tasks over TCP/IP.
+<u>Software list - NOT finished / NOT released due to unpridicted conditions - sabotauge from "partner"</u>
 
+| Application                      | Status        |
+|----------------------------------|---------------|
+| Engrave Software v2 (Stable)     | Not finished  |
+| CNC Software                     | Not finished  |
+| Server Side software             | Not finished  |
+| Remote Tasks over TCP/IP         | Not finished  |
 
-Important:<br>
+---
+
+<b> Important</b><br>
 
 > The <b>OnHold</b> status implies that the programs and modules were not released,
 > and work on them was not completed due to deliberate sabotage by a partner
@@ -562,6 +568,20 @@ Development proceeded under severely underspecified requirements, with no offici
 > The client presented a dusty PCB with deliberately obscured or scratched-off IC markings (possibly removed from another device). The board was clearly hand-soldered, exhibiting poor soldering quality, residual sticky flux, and bent connectors. Multiple wire jumpers were added to re‑establish connections between traces and IC pins (likely layout corrections or post‑manufacturing fixes). The PCB had no component labeling whatsoever and completely lacked a silkscreen layer. The main controller was an ATMega128 microcontroller, accompanied by three L6472 stepper motor driver ICs.
 
 > The project presented a severe challenge due to a total absence of formal technical documentation. The client could not provide a technical specification or even a precise description of the engraving machine's operations. Instead, the only available materials were vague texts on anonymous sheets of paper, completely lacking signatures, names, company stamps, or any references to a source—essentially generic internet reprints mass-published between 2010 and 2015. Moreover, there was absolutely no information regarding the system architecture, GUI layouts, menu structures, or screen transition logic. Under these conditions, the entire hardware and software development process had to be built from the ground up, driven strictly by my own engineering intuition and understanding of how professional engraving equipment should function. To bridge this massive documentation gap and ensure a reliable design, the system logic was developed using official technical documentation and reference ecosystems from industry leaders, relying heavily on STMicroelectronics for the STM32 MCU and L6472 stepper motor drivers, and Avnet for hardware solutions combining STM32 with Xilinx boards.
+
+Project Goal
+> V01G04A81 was not primarily interested in developing an engraving machine itself;
+the main focus was the development of a core CNC controller platform that could later be used for
+3D printers, Pick & Place systems, and machining of wood, plastics, and soft metals such as aluminum.
+The engraver software was essentially a side product that emerged in parallel during CNC software development,
+since some modules and technologies partially overlapping with the CNC software.
+
+Engraver Draft v1.0
+> The first release was issued as a temporary emergency solution intended to rescue a critical situation for the entrepreneur. It was a rough, highly limited prototype version with minimal functionality, designed mainly as a placeholder product for customers until a proper software package could be completed later. In general, delivering a complete device from scratch within four months (2 months for hardware and 2 months for software) was an extremely tight schedule for a project of this complexity. However, thanks to existing groundwork, reusable libraries, prior experience, and an automated modular build system, the project was completed on time. sprk81 implemented the initial core functionality, while V01G04A81 integrated his own execution core and GUI framework — which effectively brought the Draft v1.0 system to life. Technically, it was still a primitive single-threaded application with two blocking windows and a minimal DOS-style user interface using a black/white/blue color scheme. Nevertheless, it fulfilled its primary purpose and operated reliably and stably.
+
+Version 2.0
+> Version 2.0 is a separate program, rewritten practically from scratch, which no longer contains the initial modules contributed by sprk81. It was developed inside a Windows‑based emulator and then ported to arbitrary embedded platforms (the wide choice included, for example, STM32F407).
+Key differences: full multitasking; a fully‑fledged GUI with multi‑windowing and the ability to switch between windows at any time, completely independent of task status; font anti‑aliasing and fast graphics; image scaling; hierarchical menu systems with detailed motor settings, application parameters, and other module configurations; support for Bootloader, System Monitor, input file parsing and task pre‑processing before execution, as well as other features …
 
 
 ---
