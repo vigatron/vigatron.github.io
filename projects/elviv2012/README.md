@@ -541,7 +541,7 @@ GUI and functionality emulation during development was carried out in Windows, a
 
 <br>
 
-<u>Software list - NOT finished / NOT released due to unpridicted conditions - sabotauge from "partner"</u>
+<u>Software list - NOT finished / NOT released due to unpridicted conditions - sabotauge from "entrepreneur"</u>
 
 | Application                      | Status        |
 |----------------------------------|---------------|
@@ -579,9 +579,14 @@ since some modules and technologies partially overlapping with the CNC software.
 Engraver Draft v1.0
 > The first release was issued as a temporary emergency solution intended to rescue a critical situation for the entrepreneur. It was a rough, highly limited prototype version with minimal functionality, designed mainly as a placeholder product for customers until a proper software package could be completed later. In general, delivering a complete device from scratch within four months (2 months for hardware and 2 months for software) was an extremely tight schedule for a project of this complexity. However, thanks to existing groundwork, reusable libraries, prior experience, and an automated modular build system, the project was completed on time. sprk81 implemented the initial core functionality, while V01G04A81 integrated his own execution core and GUI framework — which effectively brought the Draft v1.0 system to life. Technically, it was still a primitive single-threaded application with two blocking windows and a minimal DOS-style user interface using a black/white/blue color scheme. Nevertheless, it fulfilled its primary purpose and operated reliably and stably.
 
+> sprk81's involvement was limited to the initial STM32 HAL and basic L6472 motor control via SPI commands (not Step/Dir signaling); he voluntarily exited the project upon completion of this minimal scope with no further participation.
+
+
 Version 2.0
 > Version 2.0 is a separate program, rewritten practically from scratch, which no longer contains the initial modules contributed by sprk81. It was developed inside a Windows‑based emulator and then ported to arbitrary embedded platforms (the wide choice included, for example, STM32F407).
 Key differences: full multitasking; a fully‑fledged GUI with multi‑windowing and the ability to switch between windows at any time, completely independent of task status; font anti‑aliasing and fast graphics; image scaling; hierarchical menu systems with detailed motor settings, application parameters, and other module configurations; support for Bootloader, System Monitor, input file parsing and task pre‑processing before execution, as well as other features …
+
+> In spring–summer 2016, the entrepreneur unexpectedly declared that "CNC development was no longer in his interest."
 
 
 ---
