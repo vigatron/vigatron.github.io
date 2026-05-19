@@ -303,13 +303,12 @@
                     <br>CXB1457R, XC6SLX9, AT91SAM7X256, MT48LC16M16A2, M25P128
                     <br>Prototype, Gerbers sent to production on 1 Aug 2012
                     <br>
-                    <br>&bull; <b>Devkit "А"</b>
+                    <br>&bull; <b>Devkit "А"</b> / 28 Apr 2010
                     <br>FPGA + SDRAM 133 Mhz / SDRAM 166 Mhz
-                    <br>28 Apr 2010
                     <br>
-                    <br>&bull; <b>Devkit "B"</b>
+                    <br>&bull; <b>Devkit "B"</b> / 5 Aug 2010
                     <br>AVC-LAN Controller + Sniffer
-                    <br>5 Aug 2010
+                    <br>
                 </span>
             </li>
 
@@ -616,10 +615,11 @@
             <ul>
 
             <!-- PUSHK Archiver -->
-            <br><p id="target-pushk">PUSHK</p>
+            <br><p id="target-pushk">PUSHK Archiver Representation-First Compression Pipeline</p>
             <li>
                 <span class="year">2026</span>
-                <span class="desc"><b>PUSHK</b> Archiver : <a href="https://github.com/vigatron/pushk" target="_blank">PUSHK Project (GitHub)</a><br> 
+                <span class="desc"><b>PUSHK</b> - Representation-First Compression Pipeline 
+                    <a href="https://github.com/vigatron/pushk" target="_blank">(GitHub)</a><br>
                     <br>
                     Experimental Data Compression Archiver<br>
                     <br>
@@ -629,22 +629,76 @@
                     &bull; Experimental preprocessing and entropy optimization methods<br>
                     &bull; Benchmarking against existing compression solutions<br>
                     &bull; Multi-stage compression prototype implementations<br>
+
                     <br>
-                    
-                    Benchmarks:<br>
-                    <a href="https://vigatron.github.io/pushk/compression_results/test_run_01/" target="_blank">
-                        Test Run #1
-                    </a>
-                    &bull;
-                    <a href="https://vigatron.github.io/pushk/compression_results/test_run_02_rdrop/" target="_blank">
-                        Test Run #2 (R-Drop)
-                    </a><br><br>
-                    Submodules:<br>
-                    <a href="https://vigatron.github.io/pushk2pre1move/" target="_blank">pushk2pre1move</a>
-                    &bull;
-                    <a href="https://vigatron.github.io/pushk2pre2spc/" target="_blank">pushk2pre2spc</a>
-                    &bull;
-                    <a href="https://vigatron.github.io/pushk2pre3rdrop/" target="_blank">pushk2pre3rdrop</a>
+
+                    <table>
+                    <thead>
+                        <tr>
+                        <th width="300">Benchmark</th>
+                        <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td><a href="https://vigatron.github.io/pushk/compression_results/test_run_01/">Test Run #1 (Move+Transform)</a></td>
+                        <td>Compression benchmark results (Test Run 1)</td>
+                        </tr>
+                        <tr>
+                        <td><a href="https://vigatron.github.io/pushk/compression_results/test_run_02_rdrop/">Test Run #2 (R-Drop)</a></td>
+                        <td>Benchmark results with R-Drop preprocessing (Test Run 2)</td>
+                        </tr>
+                    </tbody>
+                    </table>
+
+                    <br>
+
+                    <table>
+                    <thead>
+                        <tr>
+                        <th width="300">Submodules</th>
+                        <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td><a href="https://vigatron.github.io/pushk2pre1move/">pushk2pre1move</a></td>
+                        <td>Preprocessing stage 1 – Move + Transform</td>
+                        </tr>
+                        <tr>
+                        <td><a href="https://vigatron.github.io/pushk2pre2spc/">pushk2pre2spc</a></td>
+                        <td>Preprocessing stage 2 – SPC (spectral preprocessing)</td>
+                        </tr>
+                        <tr>
+                        <td><a href="https://vigatron.github.io/pushk2pre3rdrop/">pushk2pre3rdrop</a></td>
+                        <td>Preprocessing stage 3 – R-Drop method</td>
+                        </tr>
+                    </tbody>
+                    </table>
+
+                    <br>
+
+                    <table>
+                    <thead>
+                        <tr>
+                        <th width="300">Tools</th>
+                        <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td><a href="https://vigatron.github.io/pushk2exp1fnt/">pushk2exp1fnt</a></td>
+                        <td>Experimental module: font data compression</td>
+                        </tr>
+                        <tr>
+                        <td><a href="https://vigatron.github.io/pushk2cellseditor/">pushk2cellseditor</a></td>
+                        <td>Cells Editor — tool for editing/visualizing compression cells</td>
+                        </tr>
+                    </tbody>
+                    </table>
+
+                    <br>
+
                 </span>
             </li>
 
