@@ -125,8 +125,6 @@
 
         <h2>Work Experience Details</h2>
 
-        <!-- <p id="target">Это абзац, на который будет ссылка.</p> -->
-        <!-- <a href="#target">Перейти к абзацу</a> -->
         <ul>
 
         <!--
@@ -207,13 +205,26 @@
                 <span class="details"><a href="#target-cmboards">[Details]</a></span>
             </li>
 
+            <!-- <i>Freelance During CVD</i><br><br> -->
             <li>
-                <!-- <i>Freelance During CVD</i><br><br> -->
-
-                <span class="year">2020</span>
+                <span class="year"></span>
                 <span class="desc"><b>TFT backlight controller</b></span>
                 <span class="desc2">STM32-based TFT LCD power sequencing and backlight controller</span>
                 <span class="details"><a href="#target-dcdc-tft">[Details]</a></span>
+            </li>
+
+            <li>
+                <span class="year"></span>
+                <span class="desc"><b>Experimental Audio Synth Application</b></span>
+                <span class="desc2">Lightweight, real-time software synthesizer for Linux, written in C++17.</span>
+                <span class="details"><a href="https://vigatron.github.io/vhaudiosynth/" target="_blank">[Gitpages Link]</a></span>
+            </li>
+
+            <li>
+                <span class="year"></span>
+                <span class="desc"><b>V4VM 8-bit CPU CORE</b></span>
+                <span class="desc2">A custom Bytecode Virtual Machine and Soft-CPU core in C++</span>
+                <span class="details"><a href="https://vigatron.github.io/vhmcuv4vm/" target="_blank">[Gitpages Link]</a></span>
             </li>
 
             <li>
@@ -311,29 +322,68 @@
 
             <li>
                 <span class="year">2010-2012</span>
-                <span class="desc"> <b>X X X 3.14 X X X Non-Tech Trading Company</b><br>
+                <span class="desc"> <b>X X X 3.14 X X X Non-Tech, Trading Company</b>
+                    <br>(Company with experience in the import and export of ICs and FTDI2232-based adapters)
                     <br><b>GVIF Interface Prototypes for Toyota/Lexus</b>
-                    <br>(Architecture + Schematic + Hardware + Software)
+                    <br>System Architecture · Schematic Design · PCB Design · FPGA/VHDL · Embedded Firmware
                     <br>
                     <br>&bull; <b>Base Version</b>
-                    <br>CXB1455R, AT91SAM7X256, XC3S400AFT256, AD9203ARUZ, SRAM-4 MBytes
-                    <br>Prototype, Gerbers sent to production on 7 Apr 2010
+                    <br>CXB1455R, AT91SAM7X256, XC3S400AFT256, AD9203ARUZ, SRAM 4-MBytes
+                    <br>Prototype, Gerber files released for production: 7 Apr 2010
                     <br>
                     <br>&bull; <b>Max version</b>
                     <br>CXB1455R, AT91SAM7X256, XC3S400AFT256, MT48LC16M16A2,
                     <br>AD9203ARUZ, SAF7113H, M25P128, MAX9542, SN65HVD232D, HA12240FP ...
-                    <br>Prototype, Gerbers sent to production on 4 Jan 2011
+                    <br>Prototype, Gerber files released for production: 4 Jan 2011
                     <br>
                     <br>&bull; <b>Mini version</b>
                     <br>CXB1457R, XC6SLX9, AT91SAM7X256, MT48LC16M16A2, M25P128
-                    <br>Prototype, Gerbers sent to production on 1 Aug 2012
+                    <br>Prototype, Gerber files released for production: 1 Aug 2012
                     <br>
                     <br>&bull; <b>Devkit "А"</b> / 28 Apr 2010
-                    <br>FPGA + SDRAM 133 Mhz / SDRAM 166 Mhz
+                    <br>FPGA + SDRAM 133Mhz / SDRAM 166Mhz
                     <br>
                     <br>&bull; <b>Devkit "B"</b> / 5 Aug 2010
                     <br>AVC-LAN Controller + Sniffer
                     <br>
+                    <br>
+                    <i><u>Important Notes</u><br><br>
+                        &nbsp; &bull; Modified VHDL Video Core supporting the 800x480 standard Toyota / Lexus display format,
+                        based on the earlier VHDL VideoCard project (2008)<br>
+                        &nbsp; &bull; VGA → WVGA video processing<br>
+                        &nbsp; &bull; YUV → RGB / RGB → YUV conversion<br>
+                        &nbsp; &bull; GVIF timing and synchronization generation<br>
+                        &nbsp; &bull; VHGUI2012 With only simple text-based GUI and transparency layer<br>
+                        &nbsp; &bull; Simplified VHGUI2012 used generally for adjusting video I/O parameters ( brightness, contrast, scale, position, Black Level,
+                        Front/Back Porch timings etc  ... ) and channels settings without multi-fonts support,
+                        no .ico .bmp or .png supported.<br>
+                    </i>
+                </span>
+                <span class="details">
+                    <br><br>
+                    <b>C/C++ Libraries</b> 
+                    <br>&bull; FreeRTOS
+                    <br>&bull; FatFS File System
+                    <br>&bull; AT91SAM7X HAL 
+                    <br>&bull; GUI VHGUI2012
+                    <br>&bull; USB / VCP for Quality Control
+                    <br>&bull; USB / VCP for Settings
+                    <br>&bull; USB / VCP for Diagnostic
+                    <br>&bull; USB / VCP for Firmware Update
+
+                    <br><br>
+                    <b>VHDL modules</b>
+                    <br>&bull; SDRAM Controller XC3S400A
+                    <br>&bull; VGA to WVGA (Wide VGA)
+                    <br>&bull; YUV to RGB
+                    <br>&bull; RGB to YUV
+                    <br>&bull; GVIF Toyota Timings / SYNC
+                    <br>&bull; VGA to GVIF Scaler
+                    <br>&bull; PAL to GVIF Scaler
+                    <br>&bull; PIP (Picture-In-Picture Layer)
+                    <br>&bull; I2S Multichannel mixer
+                    <br><br>
+
                 </span>
             </li>
 
