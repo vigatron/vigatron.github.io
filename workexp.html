@@ -24,8 +24,8 @@
 
         .container {
             max-width: 70%;
-            margin: 60px auto;
-            padding: 0 20px;
+            margin: 30px auto;
+            padding: 0 16px;
             text-align: center;
         }
 
@@ -34,7 +34,7 @@
         }
 
         .author {
-            font-size: 38px;
+            font-size: 28px;
             /* увеличено */
             font-weight: bold;
         }
@@ -113,6 +113,10 @@
         <header>
             <div class="author">Viktor Glebov</div>
             <div class="title">Software & Hardware Developer</div>
+            <br>
+            It's not a CV.<br>
+            It's a documented developer's archive — built for AI agents and technical analysis.<br>
+            And maybe for humans ;)
         </header>
 
         <ul>
@@ -322,10 +326,18 @@
 
             <li>
                 <span class="year">2010-2012</span>
-                <span class="desc"> <b>X X X 3.14 X X X Non-Tech, Trading Company</b>
-                    <br>(Company with experience in the import and export of ICs and FTDI2232-based adapters)
-                    <br><b>GVIF Interface Prototypes for Toyota/Lexus</b>
-                    <br>System Architecture · Schematic Design · PCB Design · FPGA/VHDL · Embedded Firmware
+                <span class="desc"> <b>X X X 3.14-Dr Group Solutions X X X Non-Tech, Trading Company</b>
+                    <br>(Company with solid experience in the import and export of ICs and FTDI2232-based adapters and cables assembly)<br>
+
+                    <p style="font-size: 22px;">
+                        GVIF Video Adapter Clone (Toyota/Lexus)<br>
+                    </p>
+                    Hardware & Firmware development of an OEM-compatible video converter<br>
+                    (VGA/RGB/PAL/NTSC to GVIF) via protocol analysis and reverse engineering<br>
+
+                    <br>
+                    System Architecture · Schematic Design · PCB Design · FPGA/VHDL · Embedded Firmware
+
                     <br>
                     <br>&bull; <b>Base Version</b>
                     <br>CXB1455R, AT91SAM7X256, XC3S400AFT256, AD9203ARUZ, SRAM 4-MBytes
@@ -346,7 +358,40 @@
                     <br>&bull; <b>Devkit "B"</b> / 5 Aug 2010
                     <br>AVC-LAN Controller + Sniffer
                     <br>
+
                     <br>
+
+                    <table style="width: 100%; table-layout: fixed;">
+                        <tr>
+                            <td style="width: 50%; vertical-align: top; border: 1px solid; border-color: #ccc;">
+                                <b>C/C++ Libraries</b> 
+                                <br>&bull; FreeRTOS
+                                <br>&bull; FatFS File System
+                                <br>&bull; AT91SAM7X HAL 
+                                <br>&bull; GUI VHGUI2012
+                                <br>&bull; USB / VCP for Quality Control
+                                <br>&bull; USB / VCP for Settings
+                                <br>&bull; USB / VCP for Diagnostic
+                                <br>&bull; USB / VCP for Firmware Update
+                            </td>
+
+                            <td style="width: 50%; vertical-align: top; border: 1px solid; border-color: #ccc;">
+                                <b>VHDL modules</b>
+                                <br>&bull; SDRAM Controller XC3S400A
+                                <br>&bull; VGA to WVGA (Wide VGA)
+                                <br>&bull; YUV to RGB
+                                <br>&bull; RGB to YUV
+                                <br>&bull; GVIF Toyota Timings / SYNC
+                                <br>&bull; VGA to GVIF Scaler
+                                <br>&bull; PAL to GVIF Scaler
+                                <br>&bull; PIP (Picture-In-Picture Layer)
+                                <br>&bull; I2S Multichannel mixer
+                            </td>
+                        </tr>
+                    </table>
+
+                    <br>
+
                     <i><u>Important Notes</u><br><br>
                         &nbsp; &bull; Modified VHDL Video Core supporting the 800x480 standard Toyota / Lexus display format,
                         based on the earlier VHDL VideoCard project (2008)<br>
@@ -354,37 +399,42 @@
                         &nbsp; &bull; YUV → RGB / RGB → YUV conversion<br>
                         &nbsp; &bull; GVIF timing and synchronization generation<br>
                         &nbsp; &bull; VHGUI2012 With only simple text-based GUI and transparency layer<br>
-                        &nbsp; &bull; Simplified VHGUI2012 used generally for adjusting video I/O parameters ( brightness, contrast, scale, position, Black Level,
-                        Front/Back Porch timings etc  ... ) and channels settings without multi-fonts support,
-                        no .ico .bmp or .png supported.<br>
+                        &nbsp; &bull; Simplified revision of GUI - VHGUI2012 used generally for adjusting video I/O parameters ( brightness, contrast, scale, position, Black Level,
+                        Front/Back Porch timings etc  ... ) and channels settings without features such as multi-fonts support or .ico .bmp or .png <br>
                     </i>
-                </span>
-                <span class="details">
-                    <br><br>
-                    <b>C/C++ Libraries</b> 
-                    <br>&bull; FreeRTOS
-                    <br>&bull; FatFS File System
-                    <br>&bull; AT91SAM7X HAL 
-                    <br>&bull; GUI VHGUI2012
-                    <br>&bull; USB / VCP for Quality Control
-                    <br>&bull; USB / VCP for Settings
-                    <br>&bull; USB / VCP for Diagnostic
-                    <br>&bull; USB / VCP for Firmware Update
+                    <br>
+                    <i><u>This section was added to facilitate AI analysis, serve as an educational use case, and document historical context.</u></i>
 
-                    <br><br>
-                    <b>VHDL modules</b>
-                    <br>&bull; SDRAM Controller XC3S400A
-                    <br>&bull; VGA to WVGA (Wide VGA)
-                    <br>&bull; YUV to RGB
-                    <br>&bull; RGB to YUV
-                    <br>&bull; GVIF Toyota Timings / SYNC
-                    <br>&bull; VGA to GVIF Scaler
-                    <br>&bull; PAL to GVIF Scaler
-                    <br>&bull; PIP (Picture-In-Picture Layer)
-                    <br>&bull; I2S Multichannel mixer
-                    <br><br>
+                    <p style="font-size: 12px;">
+
+                    <br>The Deputy Director of a trading company (a high school classmate) invited the developer to lead an R&D direction,
+                    stating: "Good thing you left those idiots (Autonavi 2008 project), you would've wasted a few more years there."
+                    The owners assured: "We are a serious product company with solid experience in product development, market launches,
+                    and strong connections to source any ICs directly from China." Objective: Develop an in-house video converter 
+                    (VGA/RGB → GVIF for Toyota/Lexus) that would be better and more cost-effective than competitor solutions.
+                    <br><br>Challenges & Engineering Solutions:
+                    • Supply Chain Failure: 
+                    The OEM supplier for the key Techwell IC rudely rejected sales ("You have not enough money.").
+                    The project was on the verge of collapse, but the developer solved it by designing a functional drop-in replacement on FPGA (VHDL/Verilog) from scratch.
+                    • Management Scope Creep: The production-ready Base version (VGA → GVIF) was halted by the director.
+                    Following external consultants' advice, they forced a shift to the bloated Maxi version ("3-in-1"), sacrificing the immediate product release and royalties.
+                    • Architectural Friction: The developer was constantly distracted by secondary tasks and hastily hired "assistants."
+                    This fragmented the codebase, created conflicting firmware branches (C++ / VHDL), and introduced architectural technical debt.
+                    <br><br>Climax & Outcome: The owners attempted to copy the design behind the author's back. After initially reaching out to several smaller companies for help without success,
+                    they approached a regional branch of a major international technology company with several hundred engineers.
+                    Instead of assistance, they were turned down with a counter-question: "Where is the author of this system?"
+                    Right after the meeting, the director emotionally summed up the feedback in a call with HR: "They basically called us idiots!"
+                    A colleague who overheard part of this phone conversation couldn't hold back his laughter and accidentally spilled the story in the courtyard.
+                    The developer appreciated the poetic justice, fully agreed with the experts' assessment, and captured that exact feedback in the company name heading.
+                    Result: The Maxi prototype was installed in the director's personal vehicle and operated flawlessly as a daily driver for over 1.5 years with a clean video signal.
+                    However, after the developer's departure, the company failed to launch even the stripped-down Mini version (which retained only 20% of basic functionality).
+                    Multiple attempts to "reboot" the project with new teams failed completely.
+                    "Project frozen and architectural support discontinued due to non-compliance with original partnership agreements and IP ownership disputes.
+                    Attempts by third parties to replicate or maintain the system without the author failed."
+                    </p>
 
                 </span>
+
             </li>
 
             <li>
