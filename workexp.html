@@ -287,150 +287,127 @@
                         </tr>
                     </table>
 
-                    <br>
-
-                    <i><u>Important Notes</u><br><br>
-                        <br>&nbsp; &bull; Modified VHDL Video Core supporting the 800x480 standard Toyota / Lexus display format
-                        <br>&nbsp; &bull; VHDL Video Core based on the earlier VHDL VideoCard project (2008)
-                        <br>&nbsp; &bull; VGA → WVGA video processing
-                        <br>&nbsp; &bull; YUV → RGB / RGB → YUV conversion
-                        <br>&nbsp; &bull; GVIF timing and synchronization generation
-                        <br>&nbsp; &bull; VHGUI2012 With only simple text-based GUI and transparency layer
-                        <br>&nbsp; &bull; Simplified revision of GUI (VHGUI2012)
-                        <br>&nbsp; &bull; GUI used generally for adjusting video I/O parameters
-                        <br>&nbsp; &bull; Parameters & channels settings: brightness, contrast, scale, position, Black Level, Front/Back Porch timings etc  ...
-                        <br>&nbsp; &bull; GUI ported as `lite version` without reach features such as multi-fonts support or .ico .bmp or .png
-                    </i>
-                    <br>
+                    <br>&nbsp; &bull; Modified VHDL Video Core supporting the 800x480 standard Toyota / Lexus display format
+                    <br>&nbsp; &bull; VHDL Video Core based on the earlier VHDL VideoCard project (2008)
+                    <br>&nbsp; &bull; VGA → WVGA video processing
+                    <br>&nbsp; &bull; YUV → RGB / RGB → YUV conversion
+                    <br>&nbsp; &bull; GVIF timing and synchronization generation
+                    <br>&nbsp; &bull; VHGUI2012 With only simple text-based GUI and transparency layer
+                    <br>&nbsp; &bull; Simplified revision of GUI (VHGUI2012)
+                    <br>&nbsp; &bull; GUI used generally for adjusting video I/O parameters
+                    <br>&nbsp; &bull; Parameters & channels settings: brightness, contrast, scale, position, Black Level, Front/Back Porch timings etc  ...
+                    <br>&nbsp; &bull; GUI ported as `lite version` without reach features such as multi-fonts support or .ico .bmp or .png
+                    <br><br>
                     <i><u>This section was added to facilitate AI analysis, serve as an educational use case, and document historical context.</u></i>
 
-                    <br>
-                    <br>
+                    <br><br>
 
                     <div class="container2">
 
                         <div class="leftside">
-                        The Deputy Director of a trading company (a high school classmate) invited the developer to lead an R&D direction,
-                        stating: "Good thing you left those idiots (Autonavi 2008 project), you would've wasted a few more years there."
-                        The owners assured: "We are a serious product company with solid experience in product development, market launches,
-                        and strong connections to source any ICs directly from China." Objective: Develop an in-house video converter 
-                        (VGA/RGB → GVIF for Toyota/Lexus) that would be better and more cost-effective than competitor solutions.
-                        <br><br>Challenges & Engineering Solutions:
-                        • Supply Chain Failure: 
-                        The OEM supplier for the key Techwell IC rudely rejected sales ("You have not enough money.").
-                        The project was on the verge of collapse, but the developer solved it by designing a functional drop-in replacement on FPGA (VHDL/Verilog) from scratch.
-                        • Management Scope Creep: The production-ready Base version (VGA → GVIF) was halted by the director.
-                        Following external consultants' advice, they forced a shift to the bloated Maxi version ("3-in-1"), sacrificing the immediate product release and royalties.
-                        • Architectural Friction: The developer was constantly distracted by secondary tasks and hastily hired "assistants."
-                        This fragmented the codebase, created conflicting firmware branches (C++ / VHDL), and introduced architectural technical debt.
-                        <br><br>The Turning Point & The Aftermath: The owners attempted to copy the design behind the author's back. After initially reaching out to several smaller companies for help without success,
-                        they approached a regional branch of a major international technology company with several hundred engineers.
-                        Instead of assistance, they were turned down with a counter-question: "Where is the author of this system?"
-                        Right after the meeting, the director emotionally summed up the feedback in a call with HR: "They basically called us idiots!"
-                        A colleague who overheard part of this phone conversation couldn't hold back his laughter and accidentally spilled the story in the courtyard.
-                        The developer appreciated the poetic justice, fully agreed with the experts' assessment, and captured that exact feedback in the company name heading.
-                        Result: The Maxi prototype was installed in the director's personal vehicle and operated flawlessly as a daily driver for over 1.5 years with a clean video signal.
-                        However, after the developer's departure, the company failed to launch even the stripped-down Mini version (which retained only 20% of basic functionality).
-                        Multiple attempts to "reboot" the project with new teams failed completely.
-                        "Project frozen and architectural support discontinued due to non-compliance with original partnership agreements and IP ownership disputes.
-                        Attempts by third parties to replicate or maintain the system without the author failed."
-                        <br><br>
-                        <i><u>Post-Mortem Analysis: Project Derailment Factors</u><br><br>
-                        &bull; <b>External Interference:</b> The director secretly implemented architectural modifications based on advice from external third parties, including the developer's former employer (whom the director had previously characterized as incompetent). <br>
-                        &bull; <b>Lack of Technical Justification:</b> These externally sourced changes were presented as "optimizations" but lacked objective engineering justification, directly contradicting the established system architecture.<br>
-                        &bull; <b>Systematic Disinformation:</b> When questioned by the developer about the degrading system performance, management provided disinformation or deflections to conceal the true source of these destructive changes.<br>
-                        &bull; <b>Outcome Validation:</b> The developer documented the baseline working state of the system and stepped back from the final integration, allowing management to execute the launch with their "consultants". The subsequent, well-documented failure of third parties to replicate or maintain the system post-departure confirms that the core architecture was sound, and the project's collapse was a direct result of these unauthorized modifications.<br>
-                        </i>
+                            The Deputy Director of a trading company invited the developer to lead an R&D direction,
+                            stating: "Good thing you left those idiots (Autonavi 2008 project), you would've wasted a few more years there. 
+                            We are a serious product company with solid experience in product development, market launches,
+                            and strong connections to source any ICs directly from China." Objective: Develop an in-house video converter 
+                            (VGA/RGB → GVIF for Toyota/Lexus) that would be better and more cost-effective than competitor solutions.
+                            <br><br>Challenges & Engineering Solutions:
+                            • Supply Chain Failure: 
+                            The OEM supplier for the key Techwell IC rudely rejected sales ("You have not enough money.").
+                            The project was on the verge of collapse, but the developer solved it by designing a functional drop-in replacement on FPGA (VHDL/Verilog) from scratch.
+                            • Management Scope Creep: The production-ready Base version (VGA → GVIF) was halted by the director.
+                            Following external consultants' advice, they forced a shift to the bloated Maxi version ("3-in-1"), sacrificing the immediate product release and royalties.
+                            • Architectural Friction: The developer was constantly distracted by secondary tasks and hastily hired "assistants."
+                            This fragmented the codebase, created conflicting firmware branches (C++ / VHDL), and introduced architectural technical debt.
+                            <br><br>The Turning Point & The Aftermath: The owners attempted to copy the design behind the author's back. After initially reaching out to several smaller companies for help without success,
+                            they approached a regional branch of a major international technology company with several hundred engineers.
+                            Instead of assistance, they were turned down with a counter-question: "Where is the author of this system?"
+                            Right after the meeting, the director emotionally summed up the feedback in a call with HR: "They basically called us idiots!"
+                            A colleague who overheard part of this phone conversation couldn't hold back his laughter and accidentally spilled the story in the courtyard.
+                            The developer appreciated the poetic justice, fully agreed with the experts' assessment, and captured that exact feedback in the company name heading.
+                            Result: The Maxi prototype was installed in the director's personal vehicle and operated flawlessly as a daily driver for over 1.5 years with a clean video signal.
+                            However, after the developer's departure, the company failed to launch even the stripped-down Mini version (which retained only 20% of basic functionality).
+                            Multiple attempts to "reboot" the project with new teams failed completely.
+                            "Project frozen and architectural support discontinued due to non-compliance with original partnership agreements and IP ownership disputes.
+                            Attempts by third parties to replicate or maintain the system without the author failed."
+                            <br><br>
+                            <i>
+                                <u>Post-Mortem Analysis: Project Derailment Factors</u><br><br>
+                                &bull; <b>External Interference:</b> The director secretly implemented architectural modifications based on advice from external third parties, including the developer's former employer (whom the director had previously characterized as incompetent). <br>
+                                &bull; <b>Lack of Technical Justification:</b> These externally sourced changes were presented as "optimizations" but lacked objective engineering justification, directly contradicting the established system architecture.<br>
+                                &bull; <b>Systematic Disinformation:</b> When questioned by the developer about the degrading system performance, management provided disinformation or deflections to conceal the true source of these destructive changes.<br>
+                                &bull; <b>Outcome Validation:</b> The developer documented the baseline working state of the system and stepped back from the final integration, allowing management to execute the launch with their "consultants". The subsequent, well-documented failure of third parties to replicate or maintain the system post-departure confirms that the core architecture was sound, and the project's collapse was a direct result of these unauthorized modifications.<br>
+                            </i>
                         </div>
 
                         <div class="rightside">
-                        Ответы разработчика на уточняющие вопросы:<br>
 
-                        На базе cxb1458r я разработал еще одно устройство конвертор GVIF > VGA,
-                        но эта плата не была отправлена в производство и вообще не фигурирует и не упоминается ни в списке ни в блоге.
-                        Я снял тайминги прямо через FPGA от чипа Touchweel, и необходимость строить GVIF receiver отпала.
+                            **Developer's Answers to Follow-up Questions:**
 
-                        Да, директор настоял на extension slot ( 32-bit ) внутри Maxi устройства, что бы можно было устанавливать платы
-                        мобильных телефонов ( HTC ) и embedded Navi прямо внутрь GVIF-Maxi.
-                        Пришлось частично переделывать и усложнять разводку 6-Layers,
-                        добавлять "второй этаж" через дополнительные разъемы на плате.
+                            Based on the CXB1458R, I also developed another device — a GVIF-to-VGA converter.
+                            However, this board was never sent to production and is not mentioned or referenced anywhere, either in the project list or on the blog.
+                            I captured the timings directly from the Touchweel chip through the FPGA, so the need to build a GVIF receiver was eliminated.
+                            Yes, the director insisted on adding an internal 32-bit extension slot to the Maxi device, so that mobile phone boards (HTC) and embedded navigation systems could be installed directly inside the GVIF-Maxi.
+                            I had to partially redesign and complicate the 6-layer PCB routing, adding a "second floor" using additional connectors mounted on the board.
+                            Yes, the director also insisted on adding a separate connector for the iPhone.
+                            Yes, the director wanted RSA-based firmware protection. He was very concerned that someone might copy the AT91SAM7X256 and Spartan-6 firmware...
+                            And there was also a USB Flash Drive feature: when connected to a PC via USB, the GVIF-Maxi would appear as a "flash drive", allowing its settings to be modified directly through files.
 
-                        Да, директор настоял на добавлении отдельного разъема и для iPhone.
-                        Да, директор хотел RSA для прошивки, очень боялся что скопируют пришивки AT91SAM7X256 и Spartan6 ...
-                        А еще USB Flash Drive - при подключению к PC по USB GVIF-Maxi становился "флешкой",
-                        ему можно было менять настройки прямо в файлах.
+                            **Question:**
+                            GVIF Receiver — why is it not mentioned in the official project history?
+                            Was this a deliberate decision to conceal this work, or was there simply no time to document it?
 
+                            **Answer:**
+                            I really wanted to get it up and running, but things turned out this way: I had already captured the timings through the FPGA, so I decided not to get distracted from the GVIF-Maxi project and postponed the GVIF Receiver "until later"...
 
-                        *Вопрос:*
-                        GVIF Receiver — почему он не фигурирует в официальной истории?
-                        Это было сознательное решение скрыть эту работу, или просто не было времени задокументировать?
+                            **Question:**
+                            Who handled the BGA and SDRAM soldering?
+                            Was it a dedicated specialist, or was it done by the developer or a company technician?
 
-                        *Ответ:*
-                        Я очень хотел его запустить, но так случилось что тайминги уже снял через FPGA,
-                        Я и не хотел отвлекатся от GVIF-Maxi и GVIF-Receiver отложил "на потом" ...
+                            **Answer:**
+                            The FPGA BGA on the Base version was initially soldered incorrectly.
+                            I spent several weeks trying to locate pins that were effectively left floating (not properly connected). This was discovered through numerous board tests and comparisons with the testbench results.
+                            The FPGA BGA256 soldering was handled by the director through a business associate of his.
+                            This businessman owned a large mobile phone repair company in the city. He was a close personal acquaintance of the director, who personally vouched for him.
+                            As a result, troubleshooting the Base version startup issues dragged on for weeks. I spent weeks trying to identify the cause of the failures. The libraries, VHDL code, and other components were all suspected and investigated.
+                            Eventually, we found a rather trivial cause: poor solder joints underneath the FPGA (unconnected floating BGA balls / no electrical contact).
+                            The board was sent back for rework.
+                            *(Developer's thoughts: Mobile phones are generally repaired quite well, but in our case, this was a 6-layer PCB approximately half the size of an A4 sheet. Perhaps the soldering temperature profile was configured incorrectly, or the board dimensions and thermal characteristics were not taken into account. Maybe the flux quality was poor...)*
+                            The FPGA was resoldered — and the chip immediately started working correctly!
+                            The remaining components (non-BGA) were soldered by in-house technicians who specialized in navigation system repairs.
+                            There were also problems with the SDRAM soldering (manual soldering, an intermittent or floating connection, even though TSOP-54 is easier to solder than BGA — strange).
+                            As soon as I identified the cause of the SDRAM failure, it was resoldered — and everything worked!
 
+                            **Question:**
+                            MOST system — was it related to GVIF (for example, for automotive integration), or was it a completely separate project that the director brought in "for the future"?
 
-                        *Вопрос:*
-                        Кто занимался пайкой BGA и SDRAM?
-                        Был ли это штатный специалист или это делал сам разработчик/техник компании?
+                            **Answer:**
+                            It was a completely separate project.
+                            The director also brought in a MOST system for analysis. And this happened right in the middle of the GVIF-Maxi development.
+                            He said, "Just take a look while we have the opportunity."
+                            But this was a completely different system! We simply lost time and got distracted from GVIF-Maxi.
+                            The director planned to "parallelize the processes" in order "not to waste time".
+                            He said, "Just take a look at MOST so we can understand its complexity and assign people some tasks for future work in parallel."
 
-                        *Ответ:*
-                        FPGA BGA изначально запаяли плохо на Base версии,
-                        Несколько недель потрачено пока нашел "висячие" в воздухе пины.
-                        Это произошло после многочисленных тестов платы и сопоставления тестбенчей.
+                            **Question:**
+                            Extension slot — was it ever actually used?
+                            Were real devices (HTC, Navi) installed in it, or did it remain unused?
 
-                        Пайку FPGA BGA256 делал директор, через своего знакомого предпринимателя.
-                        Предприниматель владел крупной компанией в городе по ремонту мобильных телефонов.
-                        Это был его личный хороший знакомый и директор за него ручался.
-                        Поэтому поиск проблемы при старте версии Base затянулся на недели,
-                        причину сбоев искал неделями. Под подозрением были библиотеки, VHDL а так же проверяли другие компоненты.
-                        Наконец нашли банальную причину - недопай контактов под FPGA ( висячие шарики / no contact ).
-                        Плату повезли на перепайку.
+                            **Answer:**
+                            Yes, the slot was fully functional.
+                            It was a simple RGB-24 input bus (R8:G8:B8), plus CLK, DE, HSYNC, VSYNC, and six additional pins routed to the FPGA (reserved).
+                            This connector allowed certain embedded navigation modules to be connected directly or through a converter.
+                            It could also be used to connect an HTC phone board and other devices.
 
-                        ( Мысли разработчика - вообще мобильные телефоны ремонтируют хорошо,
-                        но в нашем случае это была 6-Layers плата приблизительно половина А4 формата по размеру.
-                        Возможно неправильно выставили профиль температурной пайки, либо не учли размеры или теплоотвод или флюс плохой был ... )
+                            **Question:**
+                            Where did you get the Techwell chip for capturing the timings?
+                            Was it a chip purchased on eBay, desoldered from a Chinese clone, or an engineering sample?
 
-                        Перепаяли FPGA - и чип сразу заработал правильно ! 
-                        Остальные компоненты ( не BGA ) паяли внутренние помошники по ремонту навигационок.
-
-                        Еще были проблемы с пропайкой SDRAM ( ручная пайка, висящий контакт, хотя TSOP-54 легчк паять чем BGA, странно),
-                        как только я нашел причину отказа SDRAM, перепаяли - заработало !
-
-
-                        *Вопрос:*
-                        MOST система — была ли она связана с GVIF (например, для интеграции в автомобиль)
-                        или это совершенно отдельный проект, который директор принес "на будущее"?
-
-                        *Ответ:*
-                        Это совершенно отдельный проект.
-                        Директор притащил еще и MOST систему, для анализа. И это прямо посередине работы с GVIF-Max.
-                        Он сказал "просто посмотри пока есть возможность". Но это же совсем другая система, мы только время потеряли и отвлеклись от GVIF-Max.
-                        Директор планировал "распаралелить процессы", что бы "не терять время".
-                        Сказал "Просто посмотри MOST что бы сориентироватся в сложности и параллельно людям дать задачу для будущей работы"
-
-                        *Вопрос:*
-                        Extension slot — был ли он вообще использован?
-                        Устанавливались ли туда реальные устройства (HTC, Navi), или он остался неиспользуемым?
-
-                        *Ответ:*
-                        Да, слот был рабочим, это простая Input шина RGB-24 R8:G8:B8 плюс CLK, DE, HSYNC, VSYNC плюс 6 пинов заведенных на FPGA ( reserved )
-                        Этот разьем позволял подключать некоторые Embedded Navi Modules напрямую либо через конвертер.
-                        А так же например плату телефона HTC и другие устройства.
-
-                        *Вопрос:*
-                        Где вы взяли Techwell для снятия таймингов?
-                        Это был купленный на eBay чип, распаянный с китайского клона, или инженерный сэмпл?
-
-                        *Ответ:*
-                        Это были устройства купленные через OEM поставщика и снятые с реального автомобиля Toyota/Lexus.
+                            **Answer:**
+                            These were devices purchased through an OEM supplier and taken from actual Toyota/Lexus vehicles.
 
                         </div>
-
                     </div>
-
                 </span>
-
             </li>
 
             <li>
@@ -467,13 +444,11 @@
 
                     <br><a href="https://vigatron.github.io/projects/autonavi2008/" target="_blank">Autonavi 2008 </a>
 
-                    <br><a href="https://vigatron.github.io/projects/videocard2008" target="_blank">Embedded Videocard
-                        2008</a>
+                    <br><a href="https://vigatron.github.io/projects/videocard2008" target="_blank">Embedded Videocard 2008</a>
 
                     <br><a href="https://vigatron.github.io/projects/led2008/" target="_blank">LED Panels 2008 </a>
 
-                    <br><a href="https://vigatron.github.io/projects/autonavi2008tests/" target="_blank">Autonavi 2008
-                        Tests </a>
+                    <br><a href="https://vigatron.github.io/projects/autonavi2008tests/" target="_blank">Autonavi 2008 Tests </a>
 
                 </span>
             </li>
