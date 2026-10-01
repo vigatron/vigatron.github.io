@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #ffffff;
+    color: #111;
+}
+
+.container {
+    max-width: 90%;
+    margin: 30px auto;
+    padding: 0 16px;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+.author {
+    font-size: 28px;
+    /* увеличено */
+    font-weight: bold;
+}
+
+.title {
+    font-size: 28px;
+    /* увеличено */
+    color: #555;
+    margin-top: 6px;
+}
+
+h2 {
+    font-size: 20px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 10%;
+    margin-right:10%;
+
+    /* max-width: 1200px; */
+}
+
+li {
+    font-size: 20px;
+    margin: 12px 0;
+    padding: 14px;
+    background: #f7f7f7;
+    border-radius: 6px;
+
+    display: flex;
+    gap: 20px;
+    text-align: left;
+    align-items: flex-start;
+}
+
+.year {
+    min-width: 140px;
+    font-weight: bold;
+    color: #333;
+    flex-shrink: 0;
+}
+
+.desc   { flex: 1; }
+
+.desc2  { flex: 1; }
+
+.details  { min-width: 100px; }
+
+footer {
+    margin-top: 40px;
+    font-size: 18px;
+    color: #aca5a5;
+}
+
+a {
+    color: #3f66bb;
+    text-decoration: none;
+    font-size: 17px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container2 {
+    display: flex;       /* Включаем Flexbox */
+    gap: 20px;          /* Расстояние (отступ) между колонками */
+    width: 100%;        /* Растягиваем на всю доступную ширину */
+
+    font-size: 10px;
+}
+
+.leftside
+{
+    width:50%;
+    display: inline-block;
+    margin-right: 12px;
+    vertical-align: top;
+}
+
+.rightside
+{
+    width:50%;
+    display: inline-block;
+    vertical-align: top;
+}
