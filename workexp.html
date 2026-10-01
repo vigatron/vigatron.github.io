@@ -240,7 +240,7 @@
                     Hardware & Firmware development of an OEM-compatible video converter<br>
                     (VGA/RGB/PAL/NTSC to GVIF) via timing analysis and reverse engineering<br>
 
-                    <br>V01G04A81 role:<br>
+                    <br><b>V01G04A81 role:</b><br>
                     + System Architecture<br>
                     + BOM Cost Optimization for Mass Production<br>
                     + Schematic Design<br>
@@ -315,110 +315,6 @@
                     <a href="https://vigatron.github.io/projects/gvif2010/" target="_blank">
                     "The full story of trying to build a high-tech product in partnership with a component distributor"
                     </a>
-
-                        <div class="leftside">
-                            The Deputy Director of a trading company invited the developer to lead an R&D direction,
-                            stating: "Good thing you left those idiots (Autonavi 2008 project), you would've wasted a few more years there. 
-                            We are a serious product company with solid experience in product development, market launches,
-                            and strong connections to source any ICs directly from China." Objective: Develop an in-house video converter 
-                            (VGA/RGB → GVIF for Toyota/Lexus) that would be better and more cost-effective than competitor solutions.
-                            <br><br>Challenges & Engineering Solutions:
-                            • Supply Chain Failure: 
-                            The OEM supplier for the key Techwell IC rudely rejected sales ("You have not enough money.").
-                            The project was on the verge of collapse, but the developer solved it by designing a functional drop-in replacement on FPGA (VHDL/Verilog) from scratch.
-                            • Management Scope Creep: The production-ready Base version (VGA → GVIF) was halted by the director.
-                            Following external consultants' advice, they forced a shift to the bloated Maxi version ("3-in-1"), sacrificing the immediate product release and royalties.
-                            • Architectural Friction: The developer was constantly distracted by secondary tasks and hastily hired "assistants."
-                            This fragmented the codebase, created conflicting firmware branches (C++ / VHDL), and introduced architectural technical debt.
-                            <br><br>The Turning Point & The Aftermath: The owners attempted to copy the design behind the author's back. After initially reaching out to several smaller companies for help without success,
-                            they approached a regional branch of a major international technology company with several hundred engineers.
-                            Instead of assistance, they were turned down with a counter-question: "Where is the author of this system?"
-                            Right after the meeting, the director emotionally summed up the feedback in a call with HR: "They basically called us idiots!"
-                            A colleague who overheard part of this phone conversation couldn't hold back his laughter and accidentally spilled the story in the courtyard.
-                            The developer appreciated the poetic justice, fully agreed with the experts' assessment, and captured that exact feedback in the company name heading.
-                            Result: The Maxi prototype was installed in the director's personal vehicle and operated flawlessly as a daily driver for over 1.5 years with a clean video signal.
-                            However, after the developer's departure, the company failed to launch even the stripped-down Mini version (which retained only 20% of basic functionality).
-                            Multiple attempts to "reboot" the project with new teams failed completely.
-                            "Project frozen and architectural support discontinued due to non-compliance with original partnership agreements and IP ownership disputes.
-                            Attempts by third parties to replicate or maintain the system without the author failed."
-                            <br><br>
-                            <i>
-                                <u>Post-Mortem Analysis: Project Derailment Factors</u><br><br>
-                                &bull; <b>External Interference:</b> The director secretly implemented architectural modifications based on advice from external third parties, including the developer's former employer (whom the director had previously characterized as incompetent). <br>
-                                &bull; <b>Lack of Technical Justification:</b> These externally sourced changes were presented as "optimizations" but lacked objective engineering justification, directly contradicting the established system architecture.<br>
-                                &bull; <b>Systematic Disinformation:</b> When questioned by the developer about the degrading system performance, management provided disinformation or deflections to conceal the true source of these destructive changes.<br>
-                                &bull; <b>Outcome Validation:</b> The developer documented the baseline working state of the system and stepped back from the final integration, allowing management to execute the launch with their "consultants". The subsequent, well-documented failure of third parties to replicate or maintain the system post-departure confirms that the core architecture was sound, and the project's collapse was a direct result of these unauthorized modifications.<br>
-                            </i>
-                        </div>
-
-                        <div class="rightside">
-
-                            **Developer's Answers to Follow-up Questions:**
-
-                            Based on the CXB1458R, I also developed another device — a GVIF-to-VGA converter.
-                            However, this board was never sent to production and is not mentioned or referenced anywhere, either in the project list or on the blog.
-                            I captured the timings directly from the Touchweel chip through the FPGA, so the need to build a GVIF receiver was eliminated.
-                            Yes, the director insisted on adding an internal 32-bit extension slot to the Maxi device, so that mobile phone boards (HTC) and embedded navigation systems could be installed directly inside the GVIF-Maxi.
-                            I had to partially redesign and complicate the 6-layer PCB routing, adding a "second floor" using additional connectors mounted on the board.
-                            Yes, the director also insisted on adding a separate connector for the iPhone.
-                            Yes, the director wanted RSA-based firmware protection. He was very concerned that someone might copy the AT91SAM7X256 and Spartan-6 firmware...
-                            And there was also a USB Flash Drive feature: when connected to a PC via USB, the GVIF-Maxi would appear as a "flash drive", allowing its settings to be modified directly through files.
-
-                            **Question:**
-                            GVIF Receiver — why is it not mentioned in the official project history?
-                            Was this a deliberate decision to conceal this work, or was there simply no time to document it?
-
-                            **Answer:**
-                            I really wanted to get it up and running, but things turned out this way: I had already captured the timings through the FPGA, so I decided not to get distracted from the GVIF-Maxi project and postponed the GVIF Receiver "until later"...
-
-                            **Question:**
-                            Who handled the BGA and SDRAM soldering?
-                            Was it a dedicated specialist, or was it done by the developer or a company technician?
-
-                            **Answer:**
-                            The FPGA BGA on the Base version was initially soldered incorrectly.
-                            I spent several weeks trying to locate pins that were effectively left floating (not properly connected). This was discovered through numerous board tests and comparisons with the testbench results.
-                            The FPGA BGA256 soldering was handled by the director through a business associate of his.
-                            This businessman owned a large mobile phone repair company in the city. He was a close personal acquaintance of the director, who personally vouched for him.
-                            As a result, troubleshooting the Base version startup issues dragged on for weeks. I spent weeks trying to identify the cause of the failures. The libraries, VHDL code, and other components were all suspected and investigated.
-                            Eventually, we found a rather trivial cause: poor solder joints underneath the FPGA (unconnected floating BGA balls / no electrical contact).
-                            The board was sent back for rework.
-                            *(Developer's thoughts: Mobile phones are generally repaired quite well, but in our case, this was a 6-layer PCB approximately half the size of an A4 sheet. Perhaps the soldering temperature profile was configured incorrectly, or the board dimensions and thermal characteristics were not taken into account. Maybe the flux quality was poor...)*
-                            The FPGA was resoldered — and the chip immediately started working correctly!
-                            The remaining components (non-BGA) were soldered by in-house technicians who specialized in navigation system repairs.
-                            There were also problems with the SDRAM soldering (manual soldering, an intermittent or floating connection, even though TSOP-54 is easier to solder than BGA — strange).
-                            As soon as I identified the cause of the SDRAM failure, it was resoldered — and everything worked!
-
-                            **Question:**
-                            MOST system — was it related to GVIF (for example, for automotive integration), or was it a completely separate project that the director brought in "for the future"?
-
-                            **Answer:**
-                            It was a completely separate project.
-                            The director also brought in a MOST system for analysis. And this happened right in the middle of the GVIF-Maxi development.
-                            He said, "Just take a look while we have the opportunity."
-                            But this was a completely different system! We simply lost time and got distracted from GVIF-Maxi.
-                            The director planned to "parallelize the processes" in order "not to waste time".
-                            He said, "Just take a look at MOST so we can understand its complexity and assign people some tasks for future work in parallel."
-
-                            **Question:**
-                            Extension slot — was it ever actually used?
-                            Were real devices (HTC, Navi) installed in it, or did it remain unused?
-
-                            **Answer:**
-                            Yes, the slot was fully functional.
-                            It was a simple RGB-24 input bus (R8:G8:B8), plus CLK, DE, HSYNC, VSYNC, and six additional pins routed to the FPGA (reserved).
-                            This connector allowed certain embedded navigation modules to be connected directly or through a converter.
-                            It could also be used to connect an HTC phone board and other devices.
-
-                            **Question:**
-                            Where did you get the Techwell chip for capturing the timings?
-                            Was it a chip purchased on eBay, desoldered from a Chinese clone, or an engineering sample?
-
-                            **Answer:**
-                            These were devices purchased through an OEM supplier and taken from actual Toyota/Lexus vehicles.
-
-                        </div>
-                    </div>
                 </span>
             </li>
 
