@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://vigatron.github.io/</loc>
+  </url>
+  <url>
+    <loc>https://vigatron.github.io/workexp.html</loc>
+  </url>
+  <url>
     <loc>https://vigatron.github.io/projects/autonavi2008/</loc>
   </url>
   <url>
@@ -35,5 +41,11 @@
   </url>
   <url>
     <loc>https://vigatron.github.io/pushk/compression_results/test_run_02_rdrop/</loc>
+  </url>
+  <url>
+    <loc>https://vigatron.github.io/projects/gvif2010/</loc>
+  </url>
+  <url>
+    <loc>https://vigatron.github.io/projects/elviv2012/</loc>
   </url>
 </urlset>
