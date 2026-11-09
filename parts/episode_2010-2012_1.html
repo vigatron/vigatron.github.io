@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Episode 2010-2012 1</title>
+</head>
+<body>
+
+                <span class="year">2010-2012</span>
+                <span class="desc"> <b>X X X 3.14-Dr Group Solutions X X X Non-Tech, Trading Company</b>
+                    <br>(Company with solid experience in the import and export of ICs and FTDI FT2232-based adapters and cables assembly)<br>
+
+                    <br><b>GVIF Video Adapter Clone (Toyota/Lexus)</b><br>
+
+                    Hardware & Firmware development of an OEM-compatible video converter<br>
+                    (VGA/RGB/PAL/NTSC to GVIF) via timing analysis and reverse engineering<br>
+
+                    <br><b>V01G04A81 role:</b><br>
+                    + System Architecture<br>
+                    + BOM Cost Optimization for Mass Production<br>
+                    + Schematic Design<br>
+                    + PCB Design & Layout<br>
+                    + FPGA Design (VHDL)<br>
+                    + Embedded Firmware Development<br>
+
+                    <br>+ <b>Base Version</b>
+                    <br>CXB1455R, AT91SAM7X256, XC3S400AFT256, x3 AD9203ARUZ, x4 K6R4008V1D
+                    <br>Prototype, Gerber files released: 7 Apr 2010
+                    <br>
+                    <br>+ <b>Max version</b>
+                    <br>CXB1455R, AT91SAM7X256, XC3S400AFT256, x2 MT48LC16M16A2, UDA1334, x3 AD9203ARUZ, SAF7113H, M25P128, MAX9542, SN65HVD232D, HA12240FP, ...
+                    <br>Prototype, Gerber files released: 4 Jan 2011
+                    <br>
+                    <br>+ <b>Mini version</b>
+                    <br>CXB1457R, XC6SLX9, AT91SAM7X256, MT48LC16M16A2, M25P128, HDMI-In, ...
+                    <br>Prototype, Gerber files released: 1 Aug 2012
+                    <br>
+                    <br>+ <b>Devkit "А"</b> / 28 Apr 2010
+                    <br>FPGA + SDRAM 133Mhz / SDRAM 166Mhz
+                    <br>
+                    <br>+ <b>Devkit "B"</b> / 5 Aug 2010
+                    <br>AVC-LAN Controller + Sniffer
+                    <br>
+
+                    <br>
+
+                    <table style="width: 100%; table-layout: fixed;">
+                        <tr>
+                            <td style="width: 50%; vertical-align: top; border: 1px solid; border-color: #ccc;">
+                                <b>C/C++ Libraries</b><br>
+                                <br>+ FreeRTOS
+                                <br>+ FatFS File System
+                                <br>+ AT91SAM7X HAL 
+                                <br>+ GUI VHGUI2012
+                                <br>+ USB Mode: VCP for Quality Control
+                                <br>+ USB Mode: VCP for Settings
+                                <br>+ USB Mode: VCP for Diagnostic
+                                <br>+ USB Mode: VCP for Firmware Update
+                            </td>
+
+                            <td style="width: 50%; vertical-align: top; border: 1px solid; border-color: #ccc;">
+                                <b>VHDL modules</b><br>
+                                <br>+ SDRAM Controller XC3S400A
+                                <br>+ VGA to WVGA (Wide VGA)
+                                <br>+ YUV to RGB
+                                <br>+ RGB to YUV
+                                <br>+ GVIF Toyota Timings / SYNC
+                                <br>+ VGA to GVIF Scaler
+                                <br>+ PAL to GVIF Scaler
+                                <br>+ PIP (Picture-In-Picture Layer)
+                                <br>+ I2S Multichannel mixer
+                            </td>
+                        </tr>
+                    </table>
+
+                    <br>+ Modified VHDL Video Core supporting the 800x480 standard Toyota / Lexus display format
+                    <br>+ VHDL Video Core based on the earlier VHDL VideoCard project (2008)
+                    <br>+ VGA → WVGA video processing
+                    <br>+ YUV → RGB / RGB → YUV conversion
+                    <br>+ GVIF timing and synchronization generation
+                    <br>+ VHGUI2012 With only simple text-based GUI and transparency layer
+                    <br>+ Simplified revision of GUI (VHGUI2012)
+                    <br>+ GUI used generally for adjusting video I/O parameters
+                    <br>+ Parameters & channels settings: brightness, contrast, scale, position, Black Level, Front/Back Porch timings etc  ...
+                    <br>+ GUI ported as `lite version` without reach features such as multi-fonts support or .ico .bmp or .png
+                    <br><br>
+
+                    Link: https://vigatron.github.io/projects/gvif2010/<br>
+                    <a href="https://vigatron.github.io/projects/gvif2010/" target="_blank">
+                    "The full story of trying to build a high-tech product in partnership with a component distributor"
+                    </a>
+                </span>
+            
+</body>
+</html>
